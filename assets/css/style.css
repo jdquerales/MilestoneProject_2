@@ -7,8 +7,20 @@
 
 /* ------------------------------------- Header styles */
 
+* {
+  box-sizing: border-box;
+}
+
 #header {
    
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    overflow: hidden;
 }
 
 .align-items-center{
@@ -21,11 +33,10 @@
 
 .container {
     width: 100%;
-    position: relative;
     padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left:15px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #header .logo {
@@ -48,8 +59,28 @@
     background-color: transparent;
 }
 
+
+.getaquote-btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 25px;
+    border: solid 2px #333333;
+    border-radius: 8px 8px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    background: #106eea;
+}
+
+
 #home {
-  height: 100vh;
+   height: 100vh;
   position: relative;
   text-align: center;
   background: url(../img/maldives.jpg);
@@ -59,6 +90,33 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.opaque-overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#home h1 {
+ margin: 0;
+ font-weight: 700;
+ color: #222222;
+ font-family: "Poppins", sans-serif;
+ text-align: left;
+ margin-top: 350px;
+}
+
+
+#home h2 {
+
+ color: #555555;
+ margin: 5px 0 30px 0;
+ font-weight: 400;
+ text-align: left;
+
+}
+
+#home a {
+    text-decoration: none;
 }
 
 /* ------------------------------------- Footer styles */ 
