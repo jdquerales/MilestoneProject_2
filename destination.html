@@ -57,9 +57,24 @@ NaguaraTravel
                         <div id="locationField">
                             <input id="autocomplete" placeholder="Enter a town or city" type="text" />
                         </div>
+                    </div>  
+
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <p class="lead" id="looking-for"><small>What are you looking for?</small></p>
+                        <div id="controls">
+                            <select id="category">
+                                <option hidden disabled selected value> -- select an option -- </option>
+                                <option id="accommodation" value="accommodation">Accommodation</option>
+                                <option id="bars" value="bars">Bars/Cafes/Restaurants</option>
+                                <option id="public" value="public">Public Transport</option>
+                                <option id="tourist" value="tourist">Tourist Attractions</option>
+                            </select>
+                        </div>
                     </div>
-                    
+
                 </div>
+                 <h6><button id="reset" type="button" class="btn btn-primary" onclick="reset()"><strong>Reset</strong>   <i class="fas fa-redo-alt"></i></button></h6>
+                
 
                 <hr class="hr2" id="hr">
 
