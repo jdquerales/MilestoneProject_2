@@ -46,22 +46,53 @@ NaguaraTravel
 <section id="home-destination" class="container-fluid align-items-center d-flex">
 
 
-<div class="container-fluid row finder-col">
+<div class="container-fluid row finder-col pac-card" id="pac-card">
 
 
-<div class="col-12 col-lg-4 ">
-        <h1>
-Filter
-</h1>        
-                
+<div class="col-12 col-lg-4">
+       <p class="lead" id="looking-for"><small>What are you looking for?</small></p> 
+
+      
+      <div>
+        <div id="type-selector" class="pac-controls">
+          <input
+            type="radio"
+            name="type"
+            id="changetype-all"
+            checked="checked"
+          />
+          <label for="changetype-all">All</label>
+
+          <input type="radio" name="type" id="changetype-establishment" />
+          <label for="changetype-establishment">Establishments</label>
+
+          <input type="radio" name="type" id="changetype-address" />
+          <label for="changetype-address">Addresses</label>
+
+          <input type="radio" name="type" id="changetype-geocode" />
+          <label for="changetype-geocode">Geocodes</label>
+        </div>
+        <div id="strict-bounds-selector" class="pac-controls">
+          <input type="checkbox" id="use-strict-bounds" value="" />
+          <label for="use-strict-bounds">Strict Bounds</label>
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+
+
 </div>
 
 
 <!--    Maps    -->
 
 
+
+
+
 <div id="map" class="col-12 col-lg-8 map-col container-fluid">
-                Here is the map
+               
  </div>
 
 
@@ -88,10 +119,13 @@ Filter
    
   <!-- <script src="assets/js/main.js"></script>  --> 
 	
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 <script defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA&callback=initMap">
-	</script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA&libraries=places&callback=initMap">
+</script>
+
+   
 
    <script src="assets/js/maps.js">
 	
