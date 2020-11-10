@@ -50,35 +50,40 @@ NaguaraTravel
 
 
 <div class="col-12 col-lg-4">
-       <h3>Filters</h3>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-12">
-                        <p class="lead"><small>Where would you like to go?</small></p>
-                        <div id="locationField">
-                            <input id="autocomplete" placeholder="Enter a town or city" type="text" />
-                        </div>
-                    </div>
-                    
-                </div>
+       <p class="lead" id="looking-for"><small>What are you looking for?</small></p> 
 
-                <hr class="hr2" id="hr">
+      
+      <div>
+        <div id="type-selector" class="pac-controls">
+          <input
+            type="radio"
+            name="type"
+            id="changetype-all"
+            checked="checked"
+          />
+          <label for="changetype-all">All</label>
 
-<div id="right-panel">
-      <h2>Results</h2>
-      <ul id="places"></ul>
-      <button id="more">More results</button>
-    </div>
+          <input type="radio" name="type" id="changetype-establishment" />
+          <label for="changetype-establishment">Establishments</label>
 
-            <div class="col-12">
-                <h3 id="results-heading" class="header"></h3>
-                <div id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
-                    </table>
-                </div>
-            </div>
+          <input type="radio" name="type" id="changetype-address" />
+          <label for="changetype-address">Addresses</label>
 
-            
+          <input type="radio" name="type" id="changetype-geocode" />
+          <label for="changetype-geocode">Geocodes</label>
+        </div>
+        <div id="strict-bounds-selector" class="pac-controls">
+          <input type="checkbox" id="use-strict-bounds" value="" />
+          <label for="use-strict-bounds">Strict Bounds</label>
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+
+       <h6><button id="reset-button" type="button" class="btn btn-primary" onclick="clearMarkers()"><strong>Reset</strong>   <i class="fas fa-redo-alt"></i></button></h6>
+
+
 </div>
 
 <!--    Maps    -->
