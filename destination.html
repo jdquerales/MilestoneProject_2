@@ -63,11 +63,12 @@ NaguaraTravel
                         <p class="lead" id="looking-for"><small>What are you looking for?</small></p>
                         <div id="controls">
                             <select id="category">
-                                <option hidden disabled selected value> -- select an option -- </option>
+                                <option selected value> -- select an option -- </option>
                                 <option id="accommodation" value="accommodation">Accommodation</option>
                                 <option id="bars" value="bars">Bars/Cafes/Restaurants</option>
                                 <option id="public" value="public">Public Transport</option>
                                 <option id="tourist" value="tourist">Tourist Attractions</option>
+                                <option id="shopping" value="shopping">Shopping</option>
                             </select>
                         </div>
                     </div>
@@ -105,6 +106,12 @@ NaguaraTravel
 <div id="map" class="col-12 col-lg-8 map-col container-fluid">
                
  </div>
+
+ <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
 
 
 <div style="display: none">
