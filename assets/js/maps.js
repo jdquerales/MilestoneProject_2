@@ -1,5 +1,6 @@
-var map, autocomplete, service, place, mylat, mylng, option;
+var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var marker = [];
 let labelIndex = 0;
 
 
@@ -10,6 +11,8 @@ function initMap() {
     center: cork,
     zoom: 17,
   });
+
+
 
   const input = document.getElementById("autocomplete");
 
@@ -27,6 +30,13 @@ function initMap() {
     autocomplete.addListener('place_changed', onPlaceChanged);
     document.getElementById('category').addEventListener('change', onPlaceChanged);
     
+
+// Initialise info window to be displayed when clicking on a marker
+
+infoWindow = new google.maps.InfoWindow({
+        content: document.getElementById('info-content')
+    });
+
 }
 
  function onPlaceChanged() {   
@@ -67,7 +77,8 @@ function initMap() {
             map.setZoom(14);
             var search = {
                 bounds: map.getBounds(),
-                types: ['bar', 'cafe', 'restaurant']
+                //types: ['bar', 'cafe', 'restaurant']
+                types: ['cafe']
             };
             doNearbySearch(search);
         }
@@ -142,6 +153,7 @@ function createMarkers(places, map) {
   const placesList = document.getElementById("places");
 
   for (let i = 0, place; (place = places[i]); i++) {
+
     const image = {
       url: place.icon,
       size: new google.maps.Size(71, 71),
@@ -151,7 +163,7 @@ function createMarkers(places, map) {
     };
 
     
-    marker = new google.maps.Marker({
+    marker[i] = new google.maps.Marker({
     //  map,
     //    icon: image,
         icon : pinSymbol('blue'),
@@ -163,12 +175,24 @@ function createMarkers(places, map) {
     map: map,
     });
 
+       //marker.placeResult = place;
+    
+    marker[i].addListener("click", () => {
+    infoWindow.open(map, marker[i]);
+    });
+   
+
+   //setTimeout(dropMarker(i), i * 100);
+   // addResult(place, i);
 
     const li = document.createElement("li");
-    li.textContent =marker.label + ") " + place.name; 
+    li.textContent =marker[i].label + ") " + place.name; 
     placesList.appendChild(li);
     bounds.extend(place.geometry.location);
   }
+
+
+
   map.fitBounds(bounds);
 
   
