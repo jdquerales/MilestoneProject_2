@@ -1,10 +1,14 @@
+// Define global variables
 var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var marker = [];
 let labelIndex = 0;
+var moreButton;
+
+// Initialise Google Maps map
 
 function initMap() {
-  // Create the map.
+  // Create the map
   const cork = { lat: 51.8985, lng: -8.4756 };
   map = new google.maps.Map(document.getElementById("map"), {
     center: cork,
@@ -13,19 +17,25 @@ function initMap() {
 
   const input = document.getElementById("autocomplete");
 
+  // Create autocomplete instance
+
   autocomplete = new google.maps.places.Autocomplete(input);
 
   const infowindow = new google.maps.InfoWindow();
   const infowindowContent = document.getElementById("infowindow-content");
   infowindow.setContent(infowindowContent);
 
+  // Create PlacesService instance
+
   service = new google.maps.places.PlacesService(map);
 
-  // Event listeners.
+  // Define event listeners
   autocomplete.addListener("place_changed", onPlaceChanged);
-  document.getElementById("category").addEventListener("change", onPlaceChanged);
+  document
+    .getElementById("category")
+    .addEventListener("change", onPlaceChanged);
 
-  // Initialise info window to be displayed when clicking on a marker
+  // Initialise info window instance to be displayed when clicking on a marker
 
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
@@ -33,19 +43,8 @@ function initMap() {
 }
 
 function onPlaceChanged() {
-  let getNextPage;
-  const moreButton = document.getElementById("more");
-
-  moreButton.onclick = function () {
-    moreButton.disabled = true;
-
-    if (getNextPage) {
-      getNextPage();
-    }
-  };
-
+  
   // Extract coordinates of the input location
-
   place = autocomplete.getPlace();
 
   if ($("#accommodation").is(":selected")) {
@@ -66,8 +65,8 @@ function onPlaceChanged() {
       map.setZoom(14);
       var search = {
         bounds: map.getBounds(),
-        //types: ['bar', 'cafe', 'restaurant']
-        types: ["cafe"],
+        types: ["bar", "cafe", "restaurant"],
+        //types: ["cafe"],
       };
       doNearbySearch(search);
     } else {
@@ -146,7 +145,7 @@ function createMarkers(places, map) {
     marker[i] = new google.maps.Marker({
       //  map,
       //    icon: image,
-      icon: pinSymbol("blue"),
+      icon: pinSymbol("#C0C0C0"),
       title: place.name,
       //  position: place.geometry.location,
       animation: google.maps.Animation.DROP,
@@ -159,9 +158,6 @@ function createMarkers(places, map) {
       infoWindow.open(map, marker[i]);
       buildInfoWindowContent(place);
     });
-
-    //setTimeout(dropMarker(i), i * 100);
-    // addResult(place, i);
 
     const li = document.createElement("li");
     li.textContent = marker[i].label + ") " + place.name;
@@ -184,20 +180,17 @@ function doNearbySearch(search) {
   });
 }
 
-// Clear markers
-
-function clearMarkers() {}
-
 // Reset function
 
 function reset() {
-    clearResults();
-    clearMarkers();
+  clearMarkers();
 }
 
 $("#reset").click(function () {
   document.location.reload(true);
 });
+
+// Define customised icon on map
 
 function pinSymbol(color) {
   return {
@@ -205,12 +198,14 @@ function pinSymbol(color) {
       "M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z",
     fillColor: color,
     fillOpacity: 1,
-    strokeColor: "#000",
+    strokeColor: "#FF4500",
     strokeWeight: 2,
     scale: 1.2,
     labelOrigin: new google.maps.Point(0, -30),
   };
 }
+
+// Build info contained in infoWindows on markers
 
 function buildInfoWindowContent(place) {
   document.getElementById("iw-icon").innerHTML =
@@ -228,6 +223,7 @@ function buildInfoWindowContent(place) {
 
   // Assign a five-star rating to the place
   // to indicate the rating the place has earned, and a white star ('&#10025;')
+
   if (place.rating) {
     var ratingHtml = "";
     for (var i = 0; i < 5; i++) {
@@ -256,12 +252,11 @@ function buildInfoWindowContent(place) {
   }
 }
 
-
 function clearMarkers() {
-    for (var i = 0; i < marker.length; i++) {
-        if (marker[i]) {
-            marker[i].setMap(null);
-        }
+  for (var i = 0; i < marker.length; i++) {
+    if (marker[i]) {
+      marker[i].setMap(null);
     }
-    marker = [];
+  }
+  marker = [];
 }
