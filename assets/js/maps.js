@@ -78,6 +78,7 @@ function onPlaceChanged() {
       map.panTo(place.geometry.location);
       map.setZoom(14);
       var search = {
+        radius: 1000,
         bounds: map.getBounds(),
         types: [
           "bus_station",
