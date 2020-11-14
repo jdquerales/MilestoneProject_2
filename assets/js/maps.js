@@ -3,7 +3,7 @@ var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var marker = [];
 let labelIndex = 0;
-var moreButton;
+
 
 // Initialise Google Maps map
 
@@ -172,8 +172,7 @@ function doNearbySearch(search) {
   service.nearbySearch(search, (results, status, pagination) => {
     if (status !== "OK") return;
     createMarkers(results, map);
-    moreButton.disabled = !pagination.hasNextPage;
-
+    
     if (pagination.hasNextPage) {
       getNextPage = pagination.nextPage;
     }
