@@ -160,7 +160,7 @@ function createMarkers(places, map) {
     });
 
     const li = document.createElement("li");
-    li.textContent = marker[i].label + ") " + place.name;
+    li.innerHTML = "<b>" + marker[i].label + "</b>) " + place.name + " " + place.vicinity ;  
     placesList.appendChild(li);
     bounds.extend(place.geometry.location);
   }
@@ -183,6 +183,7 @@ function doNearbySearch(search) {
 
 function reset() {
   clearMarkers();
+  clearResults();
 }
 
 $("#reset").click(function () {
@@ -258,4 +259,11 @@ function clearMarkers() {
     }
   }
   marker = [];
+}
+
+function clearResults() {
+    var results = document.getElementById('places');
+    while (results.childNodes[0]) {
+        results.removeChild(results.childNodes[0]);
+    }
 }
