@@ -23,9 +23,7 @@ function initMap() {
 
   // Event listeners.
   autocomplete.addListener("place_changed", onPlaceChanged);
-  document
-    .getElementById("category")
-    .addEventListener("change", onPlaceChanged);
+  document.getElementById("category").addEventListener("change", onPlaceChanged);
 
   // Initialise info window to be displayed when clicking on a marker
 
@@ -191,7 +189,10 @@ function clearMarkers() {}
 
 // Reset function
 
-function reset() {}
+function reset() {
+    clearResults();
+    clearMarkers();
+}
 
 $("#reset").click(function () {
   document.location.reload(true);
@@ -252,4 +253,14 @@ function buildInfoWindowContent(place) {
   } else {
     document.getElementById("iw-website-row").style.display = "none";
   }
+}
+
+
+function clearMarkers() {
+    for (var i = 0; i < marker.length; i++) {
+        if (marker[i]) {
+            marker[i].setMap(null);
+        }
+    }
+    marker = [];
 }
