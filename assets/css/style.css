@@ -202,7 +202,7 @@ footer {
   font-size: 14px;
   text-align: center;
   padding: 10px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
   height: auto;
 }
@@ -302,7 +302,7 @@ li:nth-child(odd) {
 
 .btn-main-sections {
   margin-top: 15px;
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   border-radius: 23px;
