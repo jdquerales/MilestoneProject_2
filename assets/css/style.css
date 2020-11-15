@@ -335,7 +335,7 @@ li:nth-child(odd) {
 /* Suggestions page */
 
 #suggested-places {
-   height: 100vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   background: url(../img/beach.jpg);
@@ -345,4 +345,39 @@ li:nth-child(odd) {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.card {
+   overflow:auto;
+   font-family: "Poppins", sans-serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: auto;
+   width: 80%;
+}
+
+.row {
+    height: 100vh;
+}
+
+.border {
+     border: solid 2px #333333;
+}
+
+.center-div-content {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-height {
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .card {
+      height: 20rem;
+      width: 90%;
+  }
 }
