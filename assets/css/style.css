@@ -180,6 +180,13 @@ section {
   height: 300px;
 }
 
+.jumbotron-finder {
+ /* margin-top: 200px;*/
+  background-color: #FFF8DC;
+  height: 300px;
+  width: 50%;
+  border-radius: 6px ;
+}
 
 
 
@@ -291,6 +298,37 @@ li:nth-child(odd) {
     background-color:  rgb(221, 105, 105);
 }
 
+
+/*-------------------buttons------------------*/
+
+.btn-main-sections {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 23px;
+  width: 160px;
+  background-color: #f05f40;
+  border-color: #f05f40;
+}
+
+.btn-main-sections:hover,
+.btn-main-sections:active,
+.btn-main-sections:focus,
+.btn-main-sections:active:focus:visited {
+  background-color: #d3b3ac;
+  border-color: #d3b3ac;
+}
+
+.lead {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.center-button {
+  text-align: center !important;
+}
 
 /* Suggestions page */
 
