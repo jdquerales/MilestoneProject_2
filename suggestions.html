@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naguara Travel</title>
+    <title>Destination finder</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -42,37 +42,9 @@ NaguaraTravel
 </header>
 
 
-
-<section id="home" class="container-fluid align-items-center d-flex">
-
-<div class="jumbotron">
-
-<h1>
-Welcome to NaguaraTravel
-</h1>
-
-<hr>
-
-<h2>
-We are a team of experienced travel experts
-</h2>
-
-<p class="lead">
-<a class="getaquote-btn" href="suggestions.html">destinations of the month</a> 
-<a class="getaquote-btn" href="destination.html">explore yout next destination</a> 
-<a class="getaquote-btn" href="contact.html">get a quote</a> 
-</p>
-
- 
-
-</div>
-
-
-
-
+<section id="suggested-places" class="d-flex flex-column justify-content-center">
 
 </section>
-
 
 
 <footer id="footer" class="scrollfooter">
@@ -86,5 +58,17 @@ We are a team of experienced travel experts
    
   <!-- <script src="assets/js/main.js"></script>  --> 
 	
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA&libraries=places&callback=initMap">
+</script>
+
+   
+
+   <script src="assets/js/maps.js">
+	
+   </script>
+
 </body>
 </html>

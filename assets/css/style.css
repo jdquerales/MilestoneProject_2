@@ -12,7 +12,8 @@
 }
 
 #header {
-   background-color: yellow;
+   background-color: rgba(0, 0, 255, 0.3);;
+   align-items: left;
 }
 
 body {
@@ -162,7 +163,7 @@ section {
     margin-top: 0px;
     padding: 0px;
     text-align: center;
-    background: url(../img/luggage.jpg);
+    background: url(../img/map-vacation.jpg);
     background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -288,4 +289,20 @@ li:nth-child(odd) {
 
 #results-heading {
     background-color:  rgb(221, 105, 105);
+}
+
+
+/* Suggestions page */
+
+#suggested-places {
+   height: 100vh;
+  position: relative;
+  text-align: center;
+  background: url(../img/beach.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }

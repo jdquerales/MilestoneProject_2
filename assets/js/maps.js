@@ -1,9 +1,19 @@
+/*  November 15, 2020
+ Name: maps.js
+ Project: Milestone 2, Naguara Travel
+ Author: Jose Querales
+ This code create a Google Maps (Places) interface in NaguaraTravel, it allows the user to select a destination and filter results
+ by interests. */
+
+$(document).ready(function () {
+  console.log("ready!");
+});
+
 // Define global variables
 var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var marker = [];
 let labelIndex = 0;
-
 
 // Initialise Google Maps map
 
@@ -43,9 +53,15 @@ function initMap() {
 }
 
 function onPlaceChanged() {
-  
   // Extract coordinates of the input location
   place = autocomplete.getPlace();
+
+  new google.maps.Marker({
+    title: place.name,
+    animation: google.maps.Animation.DROP,
+    position: place.geometry.location,
+    map: map,
+  });
 
   if ($("#accommodation").is(":selected")) {
     if (place.geometry) {
@@ -134,13 +150,13 @@ function createMarkers(places, map) {
   const placesList = document.getElementById("places");
 
   for (let i = 0, place; (place = places[i]); i++) {
-    const image = {
-      url: place.icon,
-      size: new google.maps.Size(71, 71),
-      origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(17, 34),
-      scaledSize: new google.maps.Size(25, 25),
-    };
+    // const image = {
+    //   url: place.icon,
+    //   size: new google.maps.Size(71, 71),
+    //   origin: new google.maps.Point(0, 0),
+    //   anchor: new google.maps.Point(17, 34),
+    //   scaledSize: new google.maps.Size(25, 25),
+    // };
 
     marker[i] = new google.maps.Marker({
       //  map,
@@ -160,7 +176,8 @@ function createMarkers(places, map) {
     });
 
     const li = document.createElement("li");
-    li.innerHTML = "<b>" + marker[i].label + "</b>) " + place.name + " " + place.vicinity ;  
+    li.innerHTML =
+      "<b>" + marker[i].label + "</b>) " + place.name + " " + place.vicinity;
     placesList.appendChild(li);
     bounds.extend(place.geometry.location);
   }
@@ -172,7 +189,7 @@ function doNearbySearch(search) {
   service.nearbySearch(search, (results, status, pagination) => {
     if (status !== "OK") return;
     createMarkers(results, map);
-    
+
     if (pagination.hasNextPage) {
       getNextPage = pagination.nextPage;
     }
@@ -262,8 +279,8 @@ function clearMarkers() {
 }
 
 function clearResults() {
-    var results = document.getElementById('places');
-    while (results.childNodes[0]) {
-        results.removeChild(results.childNodes[0]);
-    }
+  var results = document.getElementById("places");
+  while (results.childNodes[0]) {
+    results.removeChild(results.childNodes[0]);
+  }
 }
