@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
@@ -181,11 +181,10 @@ section {
 }
 
 .jumbotron-finder {
- /* margin-top: 200px;*/
   background-color: #FFF8DC;
   height: 300px;
-  width: 50%;
-  border-radius: 6px ;
+  width: 65%;
+  border-radius: 8px ;
 }
 
 
@@ -219,10 +218,7 @@ footer {
 
 /* Google places results */
 
-#right-panel {
-  font-family: "Roboto", "sans-serif";
 
-}
 
 #right-panel select,
 #right-panel input {
@@ -238,7 +234,8 @@ footer {
 }
 
 #right-panel {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -252,6 +249,8 @@ footer {
 h2 {
   font-size: 22px;
   margin: 0 0 0px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -304,6 +303,7 @@ li:nth-child(odd) {
 .btn-main-sections {
   margin-top: 15px;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   border-radius: 23px;
   width: 160px;
@@ -320,10 +320,12 @@ li:nth-child(odd) {
 }
 
 .lead {
+  margin-top: 25px;
   text-align: center;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .center-button {
