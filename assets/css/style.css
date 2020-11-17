@@ -115,8 +115,10 @@ section {
 #home h2 {
   color: #fff;
   margin: 5px 0 30px 0;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
 }
 
 #home a {
@@ -202,7 +204,7 @@ footer {
   font-size: 15px;
   margin-bottom: 0px;
   margin-top: -10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Google places results */
@@ -383,7 +385,6 @@ li:nth-child(odd) {
   margin-bottom: 20px;
 }
 
-
 /* Contact form */
 
 #contact-form {
@@ -399,33 +400,31 @@ li:nth-child(odd) {
   -o-background-size: cover;
 }
 
-
-
 .transparentbox {
-   opacity: 0.75;
-   background-color: black;
-   z-index: 2;
-   position: relative;
-   display: flex;
-   align-content: center;
-   margin-left: 20px;
-   padding: 0px;
-   margin: 0px;
+  opacity: 0.75;
+  background-color: black;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-content: center;
+  margin-left: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .transparentboxdiv {
-    margin-top:50px;
-    color: black;
-    z-index: -2;
-    font-weight: bold;
-    background-color: none;
-    justify-content: center;
-    padding: 0px;
+  margin-top: 50px;
+  color: black;
+  z-index: -2;
+  font-weight: bold;
+  background-color: none;
+  justify-content: center;
+  padding: 0px;
 }
 
 .transparentboxdiv h3 {
-    margin-top: 20px;
-    font-family: "Pacifico", cursive;
+  margin-top: 20px;
+  font-family: "Pacifico", cursive;
 }
 
 .jumbotron-contact {
@@ -452,7 +451,8 @@ li:nth-child(odd) {
   overflow: hidden;
 }
 
-#contact span,p {
+#contact span,
+p {
   text-align: center;
 }
 
@@ -468,20 +468,24 @@ li:nth-child(odd) {
   border-radius: 80px;
 }
 
-.form-group {
-    width: 80%;
-    align-content: center;
-}
-
-div.form-group {
-    align-content: right;
-}
-
 .container-form {
-    width: 80%;
-    background-color: #fff8dc;
-    align-items: center;
-    justify-content: center !important;
-    margin: 0px;
-    border-radius: 80px;
+  width: 80%;
+  height: auto;
+  background-color: #fff8dc;
+  align-items: center;
+  justify-content: center !important;
+  margin-top: 20px;
+  border-radius: 80px;
+}
+
+.needs-validation {
+  width: 80%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+select {
+  font-family: "Poppins", sans-serif;
 }
