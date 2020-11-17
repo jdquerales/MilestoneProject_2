@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination finder</title>
     <link
       rel="stylesheet"
@@ -10,7 +10,11 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -23,123 +27,119 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid align-items-center d-flex">
+        <h1 class="logo mr-auto">
+          <a href="index.html"> NaguaráTravel </a>
+        </h1>
+      </div>
+    </header>
 
-<header id="header" class="fixed-top">
-
-<div class="container-fluid align-items-center d-flex">
-<h1 class="logo mr-auto">
-<a href="index.html">
-NaguaráTravel
-</a>
-</h1>
-
-</div>
-
-
-
-</header>
-
-
-
-<section id="suggested-places" class="d-flex flex-column justify-content-center">
-
-
-
-
-<div class="container-fluid justify-content-center">
+    <section
+      id="suggested-places"
+      class="d-flex flex-column justify-content-center"
+    >
+      <div class="container-fluid justify-content-center">
         <div class="section-title">
           <h2 class="titles">Destinations of the month</h2>
           <div class="horizontal-line"></div>
         </div>
-</div>
+      </div>
 
-<div class="container-fluid ">
+      <div class="container-fluid">
+        <div class="row row-suggestions">
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/paris-4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Paris"
+                  class="btn btn-primary btn-main-sections center-button"
+                  target="_blank"
+                  >Go somewhere</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/buenos-aires-4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buenos Aires</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Buenos_Aires"
+                  class="btn btn-primary btn-main-sections center-button"
+                  target="_blank"
+                  >Go somewhere</a
+                >
+              </div>
+            </div>
+          </div>
 
-<div class="row row-suggestions">
- 
-  <div class="col-lg-3 col-6 border center-div-content">
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/cancun-5.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cancún</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Canc%C3%BAn"
+                  class="btn btn-primary btn-main-sections center-button"
+                  target="_blank"
+                  >Go somewhere</a
+                >
+              </div>
+            </div>
+          </div>
 
-  
-  
-    <div class="card">
-    <img class="card-img-top" src="/assets/img/paris-4.jpg" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Paris</h5>
-    <p class="card-text"></p>
-    <a href="https://en.wikipedia.org/wiki/Paris" class="btn btn-primary btn-main-sections center-button" target="_blank">Go somewhere</a>
-  </div>
-  
-    </div>
-  </div>
-
-
-
-<div class="col-lg-3 col-6  border center-div-content">
-    <div class="card">
-    <img class="card-img-top" src="/assets/img/buenos-aires-4.jpg" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Buenos Aires</h5>
-    <p class="card-text"></p>
-    <a href="https://en.wikipedia.org/wiki/Buenos_Aires" class="btn btn-primary btn-main-sections center-button" target="_blank">Go somewhere</a>
-  </div>
-  
-</div>
-</div>
-
-
-<div class="col-lg-3 col-6  border center-div-content">
-    <div class="card">
-    <img class="card-img-top" src="/assets/img/cancun-5.jpg" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Cancún</h5>
-    <p class="card-text"></p>
-    <a href="https://en.wikipedia.org/wiki/Canc%C3%BAn" class="btn btn-primary btn-main-sections center-button" target="_blank">Go somewhere</a>
-  </div>
-   </div>
-</div>
-
-<div class="col-lg-3 col-6  border center-div-content">
-    <div class="card">
-    <img class="card-img-top" src="/assets/img/cuba.jpg" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">La Habana</h5>
-    <p class="card-text"></p>
-    <a href="https://en.wikipedia.org/wiki/Havana" class="btn btn-primary btn-main-sections center-button" target="_blank">Go somewhere</a>
-  </div>
-   </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-<footer id="footer" class="scrollfooter">
-
-        <div class="copyright">
-          © 2020 Copyright <strong> <span>José Querales</span></strong
-          >. All rights reserved.
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/cuba.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">La Habana</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Havana"
+                  class="btn btn-primary btn-main-sections center-button"
+                  target="_blank"
+                  >Go somewhere</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-     
-</footer>
-   
-  <!-- JavaScript  --> 
+      </div>
+    </section>
 
-</body>
+    <footer id="footer" class="scrollfooter">
+      <div class="copyright">
+        © 2020 Copyright <strong> <span>José Querales</span></strong
+        >. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- JavaScript  -->
+  </body>
 </html>
