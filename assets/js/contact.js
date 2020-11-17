@@ -1,4 +1,5 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+/* Bootstrap JavaScript function for disabling form submissions if there are invalid fields */
+
 (function () {
   "use strict";
   window.addEventListener(
@@ -14,7 +15,7 @@
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
-              alert("Something went wrong!");           
+              alert("Something went wrong!");
             }
             form.classList.add("was-validated");
             alert("Your message has been sent!");
@@ -28,21 +29,23 @@
 })();
 
 
+/* This function send email through EmailJS service by taking inputs from form in contact.html */
+
 function sendMail(contactForm) {
-    emailjs.send("gmail.com", "template_bq0n2sx", {
-        "from_name": contactForm.validationCustom01.value,
-        "from_surname": contactForm.validationCustom02.value,
-        "from_email": contactForm.validationCustom03.value,
-        "project_request": contactForm.message.value
+  emailjs
+    .send("gmail.com", "template_bq0n2sx", {
+      from_name: contactForm.validationCustom01.value,
+      from_surname: contactForm.validationCustom02.value,
+      from_email: contactForm.validationCustom03.value,
+      project_request: contactForm.message.value,
     })
     .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
+      function (response) {
+        console.log("SUCCESS", response);
+      },
+      function (error) {
+        console.log("FAILED", error);
+      }
     );
-    return false;  // To block from loading a new page
+  return false; // To block from loading a new page
 }
-
