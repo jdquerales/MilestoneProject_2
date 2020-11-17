@@ -321,6 +321,14 @@ li:nth-child(odd) {
 
 /* Suggestions page */
 
+#autocomplete {
+  font-family: "Poppins", sans-serif;
+}
+
+#controls select {
+  font-family: "Poppins", sans-serif !important;
+}
+
 #suggested-places {
   height: 100vh;
   position: relative;
@@ -471,7 +479,7 @@ p {
 .container-form {
   width: 80%;
   height: auto;
-  background-color: rgb(255,248,220,0.9);
+  background-color: rgb(255, 248, 220, 0.9);
   align-items: center;
   justify-content: center !important;
   margin-top: 20px;
