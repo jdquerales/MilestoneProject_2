@@ -409,6 +409,8 @@ li:nth-child(odd) {
    display: flex;
    align-content: center;
    margin-left: 20px;
+   padding: 0px;
+   margin: 0px;
 }
 
 .transparentboxdiv {
@@ -418,6 +420,7 @@ li:nth-child(odd) {
     font-weight: bold;
     background-color: none;
     justify-content: center;
+    padding: 0px;
 }
 
 .transparentboxdiv h3 {
@@ -436,4 +439,49 @@ li:nth-child(odd) {
   align-items: center;
   justify-content: center !important;
   margin: 0px;
+}
+
+/* ------------------------------------- Contact page styles */
+
+#contact {
+  background-color: #ececec;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-size: cover;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#contact span,p {
+  text-align: center;
+}
+
+#contact a {
+  color: #f8f8ff;
+  text-decoration: none;
+}
+
+.jumbotron-form {
+  background-color: #fff8dc;
+  height: auto;
+  width: 70%;
+  border-radius: 80px;
+}
+
+.form-group {
+    width: 80%;
+    align-content: center;
+}
+
+div.form-group {
+    align-content: right;
+}
+
+.container-form {
+    width: 80%;
+    background-color: #fff8dc;
+    align-items: center;
+    justify-content: center !important;
+    margin: 0px;
+    border-radius: 80px;
 }

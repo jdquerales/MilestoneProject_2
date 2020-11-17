@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination finder</title>
     <link
       rel="stylesheet"
@@ -10,7 +10,11 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -23,63 +27,128 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid align-items-center d-flex">
+        <h1 class="logo mr-auto">
+          <a href="index.html"> NaguaráTravel </a>
+        </h1>
+      </div>
+    </header>
 
-<header id="header" class="fixed-top">
-
-<div class="container-fluid align-items-center d-flex">
-<h1 class="logo mr-auto">
-<a href="index.html">
-NaguaráTravel
-</a>
-</h1>
-
-</div>
-
-
-
-</header>
-
-
-
-<section id="contact-form" class="d-flex flex-column transparentbox">
-
-<div class="container-fluid row">
-<div class="col">
-<div class="container-fluid transparentboxdiv jumbotron-contact row">
-<div class="container-fluid">
-        <div class="section-title">
-          <h2 class="titles">Get a Quote</h2>
-          <h3>Describe your perfect break below and one of our agents will get back to you with a personalized holiday recommendation</h3>
-          
-</div>
-</div>
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-</section>
-
-
-<footer id="footer" class="scrollfooter">
-
-        <div class="copyright">
-          © 2020 Copyright <strong> <span>José Querales</span></strong
-          >. All rights reserved.
+    <section id="contact-form" class="d-flex flex-column transparentbox">
+      <div class="container-fluid row">
+        <div class="col">
+          <div class="container-fluid transparentboxdiv jumbotron-contact row">
+            <div class="container-fluid">
+              <div class="section-title">
+                <h2 class="titles">Get a Quote</h2>
+                <h3>
+                  Describe your perfect break below and one of our agents will
+                  get back to you with a personalized holiday recommendation
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
-     
-</footer>
-   
-  <!-- JavaScript  --> 
+      </div>
 
-</body>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="container-form">
+          <form
+            action="./validation.html"
+            target="_blank"
+            class="needs-validation"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="validationCustom01">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder=""
+                value=""
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="form-group">
+              <label for="validationCustom02">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                placeholder=""
+                value=""
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="form-group">
+              <label for="validationCustom03">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationCustom03"
+                placeholder=" "
+                value=" "
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="Please write something for me"
+                rows="5"
+                required
+              ></textarea>
+
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="center-button">
+              <button type="submit" class="btn btn-primary btn-main-sections">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="scrollfooter">
+      <div class="copyright">
+        © 2020 Copyright <strong> <span>José Querales</span></strong
+        >. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript libraries-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript  -->
+
+    <script src="assets/js/contact.js"></script>
+  </body>
 </html>
