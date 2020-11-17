@@ -14,8 +14,10 @@
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
+              alert("Something went wrong!");           
             }
             form.classList.add("was-validated");
+            alert("Your message has been sent!");
           },
           false
         );
@@ -43,3 +45,4 @@ function sendMail(contactForm) {
     );
     return false;  // To block from loading a new page
 }
+
