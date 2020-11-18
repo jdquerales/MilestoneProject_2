@@ -12,12 +12,11 @@
 
 #header {
   background-color: rgba(0, 0, 255, 0.3);
-  align-items: left;
+  align-items: start;
 }
 
 body {
   margin: 0;
-  background-color: none;
 }
 
 .d-flex {
@@ -386,8 +385,6 @@ li:nth-child(odd) {
 }
 
 
-
-
 .titles {
   font-size: 2rem;
   text-align: center;
@@ -435,7 +432,6 @@ li:nth-child(odd) {
   color: black;
   z-index: -2;
   font-weight: bold;
-  background-color: none;
   justify-content: center;
   padding: 0px;
 }
@@ -518,4 +514,5 @@ select {
 
   #contact-form {
   height: 115vh;
+}
 }
