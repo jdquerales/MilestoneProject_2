@@ -341,6 +341,18 @@ li:nth-child(odd) {
   -o-background-size: cover;
 }
 
+#suggested-places-map {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 .card {
   overflow: auto;
   font-family: "Poppins", sans-serif;
