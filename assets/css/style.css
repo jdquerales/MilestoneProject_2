@@ -351,6 +351,21 @@ li:nth-child(odd) {
   width: 80%;
 }
 
+.card-body {
+     background-color: rgb(255, 248, 220, 0.9)!important;
+}
+
+.special-card {
+/* create a custom class so you 
+   do not run into specificity issues 
+   against bootstraps styles
+   which tends to work better than using !important 
+   (future you will thank you later)*/
+
+  background-color: rgba(245, 245, 245, 1);
+  opacity: .4;
+}
+
 .row-destinations {
   height: 100vh;
 }
@@ -370,19 +385,14 @@ li:nth-child(odd) {
   width: 90%;
 }
 
-@media (max-width: 986px) {
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .card {
-    height: 90%;
-    width: auto;
-  }
-}
+
+
 
 .titles {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   color: orange;
-  font-family: "Poppins", sans-serif;
+  font-family: "Pacifico", cursive;
 }
 
 .row-suggestions {
@@ -496,4 +506,16 @@ p {
 
 select {
   font-family: "Poppins", sans-serif;
+}
+
+
+@media (max-width: 986px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .card {
+    height: 90%;
+    width: auto;
+  }
+
+  #contact-form {
+  height: 115vh;
 }

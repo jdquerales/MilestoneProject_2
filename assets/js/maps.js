@@ -7,7 +7,7 @@
 
 $(document).ready(function () {
   console.log("ready!");
-});
+
 
 // Define global variables
 var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
@@ -284,3 +284,7 @@ function clearResults() {
     results.removeChild(results.childNodes[0]);
   }
 }
+
+
+
+});

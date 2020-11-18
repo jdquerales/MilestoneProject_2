@@ -11,13 +11,9 @@ document.getElementById("p1").innerHTML = date;
 updateTime();
 
 
-function addZero(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
 
+
+// This function update time by setting setTimeout
 
 function updateTime() {
     var todayDyn = new Date();
@@ -26,6 +22,14 @@ function updateTime() {
     var s = addZero(todayDyn.getSeconds());
     document.getElementById("p2").innerHTML = h + ":" + m + ":" + s;
     setTimeout(updateTime,1000);
+}
+
+// This function add zeros dates and months
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
 }
   
 });
