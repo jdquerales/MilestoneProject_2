@@ -5,8 +5,7 @@
  This code create a Google Maps (Places) interface in NaguaraTravel, it allows the user to select a destination and filter results
  by interests. */
 
-$(document).ready(function () {
-  console.log("ready!");
+
 
 
 // Define global variables
@@ -287,4 +286,3 @@ function clearResults() {
 
 
 
-});

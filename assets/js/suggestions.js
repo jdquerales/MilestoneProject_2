@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $("#paris").on("click", initMapPA);
 });
@@ -47,8 +48,6 @@ function initMapPA() {
     map: map,
     animation: google.maps.Animation.DROP,
   });
-
-  marker.addListener("click", toggleBounce);
 }
 
 function initMapBA() {
@@ -63,8 +62,6 @@ function initMapBA() {
     map: map,
     animation: google.maps.Animation.DROP,
   });
-
-  marker.addListener("click", toggleBounce);
 }
 
 function initMapCA() {
@@ -79,8 +76,6 @@ function initMapCA() {
     map: map,
     animation: google.maps.Animation.DROP,
   });
-
-  marker.addListener("click", toggleBounce);
 }
 
 function initMapCU() {
@@ -95,23 +90,16 @@ function initMapCU() {
     map: map,
     animation: google.maps.Animation.DROP,
   });
-
-  marker.addListener("click", toggleBounce);
-}
-
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
 }
 
 function displayMap() {
   var x = document.getElementById("suggestions-map");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  } else if (x.style.display === "block"){
+    x.style.display = "block";
   }
 }
+
+
+
