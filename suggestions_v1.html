@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination finder</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid align-items-center d-flex">
+        <h1 class="logo mr-auto">
+          <a href="index.html"> NaguaráTravel </a>
+        </h1>
+      </div>
+    </header>
+
+    <section
+      id="suggested-places"
+      class="d-flex flex-column justify-content-center"
+    >
+      <div class="container-fluid justify-content-center">
+        <div class="section-title">
+          <h2 class="titles">Destinations of the month</h2>
+          <div class="horizontal-line"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row row-suggestions">
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/paris-4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Paris"
+                  class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                  target="_blank"
+                  > <i class="fab fa-wikipedia-w"></i>
+
+ </a
+                >
+
+<button id="paris" class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"><i class="fas fa-map-marked-alt" onclick="displayMap()" ></i></button>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/buenos-aires-4.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buenos Aires</h5>
+                <p class="card-text"></p>
+                <a 
+                  href="https://en.wikipedia.org/wiki/Buenos_Aires"
+                  class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                  target="_blank"
+                  > <i class="fab fa-wikipedia-w"></i> </a
+                >
+
+               <button id="buenos_aires" class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"><i class="fas fa-map-marked-alt" onclick="displayMap()" ></i></button>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/cancun-5.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cancún</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Canc%C3%BAn"
+                  class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                  target="_blank"
+                  > <i class="fab fa-wikipedia-w"></i> </a
+                >
+
+<button id="cancun" class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions" onclick="displayMap()" ><i class="fas fa-map-marked-alt"></i></button>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 border center-div-content">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="/assets/img/cuba.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">La Habana</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Havana"
+                  class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                  target="_blank"
+                  > <i class="fab fa-wikipedia-w"></i> </a
+                >
+
+                <button id="cuba" class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions" onclick="displayMap()" ><i class="fas fa-map-marked-alt"></i></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div style="display: none" id="suggestions-map" class="col-12 col-lg-12 container-fluid-map map-col-suggestions ">
+ </div>
+       
+
+    </section>
+
+
+<!--<section
+      id="suggested-places-map"
+      class="d-flex flex-column justify-content-center"
+    > -->
+
+   
+   
+  <!--</section> --> 
+
+
+
+    <footer id="footer" class="scrollfooter">
+      <div class="copyright">
+        © 2020 Copyright <strong> <span>José Querales</span></strong
+        >. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- JavaScript  -->
+
+<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+	<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA">
+	</script>
+
+   <script src="assets/js/suggestions.js">
+
+</script>
+
+
+  </body>
+</html>
