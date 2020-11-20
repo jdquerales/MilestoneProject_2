@@ -18,10 +18,5 @@ $(document).ready(function () {
       $(this).fadeIn(5000);
     });
   }
-
-
-
-
-
   
 });
