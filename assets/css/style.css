@@ -559,7 +559,7 @@ p {
 
 .jumbotron-form {
   background-color: #fff8dc;
-  height: auto;
+  height: 100%;
   width: 70%;
   border-radius: 80px;
 }
@@ -595,7 +595,7 @@ select {
   }
 
   #contact-form {
-  height: 130vh;
+  height: 140vh;
 }
 }
 
