@@ -210,7 +210,6 @@ section {
 /* ------------------------------------- Jumbotron styles */
 
 .jumbotron {
-  margin-top: 250px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 90%;
   height: 100%;
