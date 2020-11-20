@@ -192,6 +192,7 @@ section {
   margin-top: 0px;
   padding: 0px;
   text-align: center;
+  
 }
 
 
@@ -211,7 +212,7 @@ section {
 .jumbotron {
   margin-top: 250px;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 80%;
+  width: 90%;
   height: 100%;
   padding: 0px;
 }
@@ -219,7 +220,7 @@ section {
 .jumbotron-finder {
   background-color: #fff8dc;
   height: 300px;
-  width: 65%;
+  width: 70%;
   border-radius: 8px;
 }
 
@@ -231,14 +232,13 @@ section {
     color: #fff;
     font-weight: 300;
     font-family: "Pacifico", cursive;
-    font-size: 30px;
+    font-size: 1.25rem;
 }
 
 #timer {
   display: flex; /* or inline-flex */
   color: red;
   justify-content: center;
-  font-size: 20px;
 }
 
 /* ------------------------------------- Footer styles */
@@ -390,6 +390,7 @@ li:nth-child(odd) {
 
 #autocomplete {
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #controls select {
@@ -605,9 +606,4 @@ select {
 }
 }
 
-@media (max-width: 320px) {
-#home {
-  height: 200vh;
-}
-}
 
