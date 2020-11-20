@@ -566,7 +566,7 @@ p {
 
 .container-form {
   width: 80%;
-  height: auto;
+  height: 100%;
   background-color: rgb(255, 248, 220, 0.9);
   align-items: center;
   justify-content: center !important;
