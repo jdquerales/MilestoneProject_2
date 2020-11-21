@@ -87,18 +87,6 @@ section {
   background: #106eea;
 }
 
-#home {
-  height: 100vh;
-  margin: 0;
-  background: url(../img/maldives.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-}
 
 .opaque-overlay {
   background-color: rgba(0, 0, 0, 0.25);
@@ -193,8 +181,16 @@ section {
   margin-top: 0px;
   padding: 0px;
   text-align: center;
-  
+  background: url(../img/maldives.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 
 #locationField {
@@ -215,6 +211,7 @@ section {
   width: 90%;
   height: 100%;
   padding: 0px;
+  margin: 0px;
 }
 
 .jumbotron-finder {
@@ -600,11 +597,6 @@ select {
 }
 
 
-@media (max-width: 400px) {
-#home {
-  height: 125vh;
-}
-}
 
 
 
