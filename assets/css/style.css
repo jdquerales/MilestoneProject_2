@@ -216,7 +216,7 @@ section {
 }
 
 #locationField {
-  width: 50%;
+  width: 90%;
   justify-items: center;
 }
 
@@ -385,8 +385,8 @@ li:nth-child(odd) {
 }
 
 .btn-navegation-sections {
-  background-color: #00CA4E;
-  border-color: #00CA4E;
+  background-color: #00ca4e;
+  border-color: #00ca4e;
 }
 
 .btn-main-sections:hover,
@@ -639,58 +639,55 @@ select {
   .map-col-contact {
     height: 120vh;
   }
-
- 
 }
 
 @media (max-width: 850px) {
- .map-col-suggestions {
+  .map-col-suggestions {
     height: 170vh;
   }
 
   .section-title {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .map-col-contact {
-      height: 140vh;
+    height: 140vh;
   }
 }
 
 .icons {
-    font-size: 60px;
-    color: orange;
+  font-size: 60px;
+  color: orange;
 }
 
-
 .log {
-    font-size: 14px;
-    color: orange;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 0px;
+  font-size: 14px;
+  color: orange;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
 }
 
 #calling {
-    margin-top: 50px;
-    margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .prices {
-    text-transform: bold;
-    color: red;
-    font-weight: 800!important;
-    font-size: 18px;
+  text-transform: bold;
+  color: red;
+  font-weight: 800 !important;
+  font-size: 18px;
 }
 
 .including {
-    font-size: 24px
+  font-size: 24px;
 }
 
 .lead-suggestions {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .lead-finder {
-    margin-top: 40px;
+  margin-top: 40px;
 }

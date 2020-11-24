@@ -22,12 +22,10 @@
           false
         );
       });
-      
     },
     false
   );
 })();
-
 
 /* This function send email through EmailJS service by taking inputs from form in contact.html */
 
