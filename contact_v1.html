@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 maximum-scale=1.5"
-    />
-    <title>Naguara Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination finder</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -30,6 +27,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_847JJepl9kCas9HKbIqxn");
+      })(); 
+    </script>
+
+
   </head>
   <body>
     <header id="header" class="fixed-top">
@@ -40,35 +49,31 @@
       </div>
     </header>
 
-    <section  id="home" class="d-flex flex-column justify-content-center map-col-contact" >
-
-<div class="container-fluid d-flex flex-column">
-
- <div class="row">
-    <div class="col section-title">
-    <h3>Describe your perfect break below, one of our agents will
-                  get back to you with a personalized holiday recommendation</h3>
-    </div>
-    
-    </div>
-
-
-</div>
-
-
-    <div class="container-fluid jumbotron-contact d-flex flex-column ">
-    
-   
-
-
-    <div class="row justify-content-center d-flex flex-column ">
-    
+    <section id="contact-form" class="d-flex flex-column transparentbox">
 
 
 
-    <div class="col-lg-12 justify-content-center d-flex flex-column ">
+      <div class="container-fluid row d-flex flex-column justify-content-center">
+        <div class="col">
+          <div class="container-fluid transparentboxdiv jumbotron-contact row">
+            <div class="container-fluid">
+              <div class="section-title">
+                <h2 class="titles">Get a Quote</h2>
+                <h3>
+                  Describe your perfect break below and one of our agents will
+                  get back to you with a personalized holiday recommendation
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-     <form
+      <div class="container-fluid row d-flex justify-content-center">
+        <div
+          class="col container-form container-fluid d-flex justify-content-center"
+        >
+          <form
             onsubmit="return sendMail(this);"
             action="./validation.html"
             target="_blank"
@@ -136,25 +141,8 @@
               </button>
             </div>
           </form>
-    
-    
-    
-    </div>
-    
-    </div>
-    
-    
-    </div>
-
-
-
-
-
-
-     
-     
-
-
+        </div>
+      </div>
     </section>
 
     <footer id="footer" class="scrollfooter">
@@ -164,7 +152,25 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JavaScript libraries-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- JavaScript  -->
+
     <script src="assets/js/contact.js"></script>
   </body>
 </html>

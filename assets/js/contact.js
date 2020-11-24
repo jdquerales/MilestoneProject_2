@@ -18,11 +18,11 @@
               alert("Something went wrong!");
             }
             form.classList.add("was-validated");
-            alert("Your message has been sent!");
           },
           false
         );
       });
+      
     },
     false
   );
