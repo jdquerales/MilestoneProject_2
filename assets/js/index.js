@@ -31,9 +31,16 @@ function addZero(i) {
   }
   return i;
 }
-  
+
+/*
+$( "#icon-one" ).mouseenter(function() {
+  $( "#log" ).show();
 });
 
+$( "#icon-one" ).mouseleave(function() {
+  $( "#log" ).hide();
+});
+*/
 
-
+});
 
