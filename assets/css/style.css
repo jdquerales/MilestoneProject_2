@@ -237,7 +237,7 @@ section {
 
 .jumbotron-finder {
   background-color: #fff8dc;
-  height: 300px;
+  height: 280px;
   width: 70%;
   border-radius: 8px;
 }
@@ -377,6 +377,10 @@ li:nth-child(odd) {
   border-color: #f05f40;
 }
 
+.btn-finder {
+    width: 80px;
+}
+
 .btn-main-sections-suggestions {
   margin-top: 15px;
   font-weight: 400;
@@ -405,6 +409,8 @@ li:nth-child(odd) {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+
 
 .center-button {
   text-align: center !important;
@@ -690,4 +696,24 @@ select {
 
 .lead-finder {
   margin-top: 40px;
+}
+
+.lead-finder-search {
+    margin-top: 20px;
+    margin-bottom: 0px;
+display: flex;
+  justify-content: center !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  #show-results{ display: block;
+  margin-top:0px;
+  margin-right: 5px;  }  /* show it on large screen */
+   #reset{ display: block;
+   margin-left: 5px; } 
+   .jumbotron-finder {
+  margin-top: -50px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
+  #show-results{ display: none; }   /* hide it small screens */
 }

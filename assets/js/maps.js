@@ -286,3 +286,8 @@ function clearResults() {
 
 
 
+ $("#show-results").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#map").offset().top},
+        'slow');
+});
