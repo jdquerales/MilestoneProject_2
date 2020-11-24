@@ -384,6 +384,11 @@ li:nth-child(odd) {
   width: 50px;
 }
 
+.btn-navegation-sections {
+  background-color: #00CA4E;
+  border-color: #00CA4E;
+}
+
 .btn-main-sections:hover,
 .btn-main-sections:active,
 .btn-main-sections:focus,
@@ -640,11 +645,15 @@ select {
 
 @media (max-width: 850px) {
  .map-col-suggestions {
-    height: 160vh;
+    height: 170vh;
   }
 
   .section-title {
       margin-top: 25px;
+  }
+
+  .map-col-contact {
+      height: 140vh;
   }
 }
 
@@ -675,4 +684,13 @@ select {
 
 .including {
     font-size: 24px
+}
+
+.lead-suggestions {
+    margin: 0px;
+    padding: 0px;
+}
+
+.lead-finder {
+    margin-top: 40px;
 }
