@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   $("#paris").on("click", initMapPA);
 });
@@ -96,10 +95,55 @@ function displayMap() {
   var x = document.getElementById("suggestions-map");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else if (x.style.display === "block"){
+  } else if (x.style.display === "block") {
     x.style.display = "block";
   }
 }
 
+$("#buenos-aires-card").mouseenter(function () {
+  $("#paris-card").css("opacity", "0.5");
+  $("#habana-card").css("opacity", "0.5");
+  $("#cancun-card").css("opacity", "0.5");
+});
 
+$("#buenos-aires-card").mouseleave(function () {
+  $("#paris-card").css("opacity", "1.0");
+  $("#habana-card").css("opacity", "1.0");
+  $("#cancun-card").css("opacity", "1.0");
+});
 
+$("#paris-card").mouseenter(function () {
+  $("#buenos-aires-card").css("opacity", "0.5");
+  $("#habana-card").css("opacity", "0.5");
+  $("#cancun-card").css("opacity", "0.5");
+});
+
+$("#paris-card").mouseleave(function () {
+  $("#buenos-aires-card").css("opacity", "1.0");
+  $("#habana-card").css("opacity", "1.0");
+  $("#cancun-card").css("opacity", "1.0");
+});
+
+$("#habana-card").mouseenter(function () {
+  $("#buenos-aires-card").css("opacity", "0.5");
+  $("#paris-card").css("opacity", "0.5");
+  $("#cancun-card").css("opacity", "0.5");
+});
+
+$("#habana-card").mouseleave(function () {
+  $("#buenos-aires-card").css("opacity", "1.0");
+  $("#paris-card").css("opacity", "1.0");
+  $("#cancun-card").css("opacity", "1.0");
+});
+
+$("#cancun-card").mouseenter(function () {
+  $("#buenos-aires-card").css("opacity", "0.5");
+  $("#paris-card").css("opacity", "0.5");
+  $("#habana-card").css("opacity", "0.5");
+});
+
+$("#cancun-card").mouseleave(function () {
+  $("#buenos-aires-card").css("opacity", "1.0");
+  $("#paris-card").css("opacity", "1.0");
+  $("#habana-card").css("opacity", "1.0");
+});
