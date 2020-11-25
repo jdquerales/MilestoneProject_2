@@ -147,3 +147,28 @@ $("#cancun-card").mouseleave(function () {
   $("#paris-card").css("opacity", "1.0");
   $("#habana-card").css("opacity", "1.0");
 });
+
+
+$("#paris").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#suggestions-map").offset().top},
+        'slow');
+});
+
+$("#buenos_aires").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#suggestions-map").offset().top},
+        'slow');
+});
+
+$("#cancun").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#suggestions-map").offset().top},
+        'slow');
+});
+
+$("#cuba").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#suggestions-map").offset().top},
+        'slow');
+});
