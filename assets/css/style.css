@@ -661,8 +661,21 @@ select {
 
 @media (max-width: 850px) {
   .map-col-suggestions {
-    height: 170vh;
+    height: 130vh;
   }
+
+@media (max-width: 540px) {
+  .map-col-suggestions {
+    height: 180vh;
+  }
+
+
+
+@media (max-width: 375px) {
+  .map-col-suggestions {
+    height: 180vh;
+  }
+
 
 @media (max-width: 320px) {
   .map-col-suggestions {
