@@ -199,17 +199,33 @@ devices (mobile and tablet sizes):
 I also used **Am I Responsive?** to check my responsive design.
 
 
-### Code validation
+## Code validation
 
-I used **W3C** to check my HTML and CSS files, they are OK and without warnings or error messages. I used JSHint validator to check my javascript files.
+I used **W3C** to check my HTML and CSS files, they are OK and without errors (1 warning detected in index.html and destination.html - however, I did not consider them relevant). I used JSHint validator to check my javascript files.
+Below screenshots of the validation results are exhibited.
 
 ## HTML file validation:
 
-![HTML validation](/assets/images/html_validation.png)
+### **index.html**:
+
+![HTML validation](/assets/validation_img/index.png)
+
+### **suggestions.html**:
+
+![HTML validation](/assets/validation_img/suggestions.png)
+
+### **destinations.html**:
+
+![HTML validation](/assets/validation_img/destination.png)
+
+### **contact.html**:
+
+![HTML validation](/assets/validation_img/contact.png)
+
 
 ## CSS file validation:
 
-![HTML validation](/assets/images/css_validation.png)
+![CSS validation](/assets/validation_img/style.png)
 
 ## JavaScript file validation:
 
