@@ -655,7 +655,7 @@ select {
 
 @media (max-width: 450px) {
   .map-col-index {
-    height: 110vh;
+    height: 120vh;
   }
 }
 
