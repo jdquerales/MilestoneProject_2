@@ -284,13 +284,11 @@ package from my company or my sponsors.
 
 ## Manual Testing
 
-Page| Action taken | Expected result | Pass/Fail 
------------- | -------------------------|--------- |---------
-             |                          |          |  
-             |                          |          |
-             |                          |          |
-             |                          |          |        
-
+| Page | Action taken | Expected result | Pass/Fail |
+|:----:|:------------:|:---------------:|:---------:|
+|      |              |                 |           |
+|      |              |                 |           |
+|      |              |                 |           |
 
 
 
