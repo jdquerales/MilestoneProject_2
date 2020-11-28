@@ -27,20 +27,13 @@ A live demo can be found [here](https://jdquerales.github.io/MilestoneProject_2/
 -  I want to select a search category, so that I can learn about accommodation
 options, gastronomic and main attractions in the selected destination.
 
-![us1](/assets/validation_img/us1_2.png)
-
 
 -  I want to interact with a map, so that I can easily get a feeling of the relative distances between locations I may be interested.
-
-![us31](/assets/validation_img/us3_1.png)
-
-![us32](/assets/validation_img/us3_2.png)
 
 
 -  I want to see holiday destination offers available, so that I can decide
 whether they may be of my interest.
 
-![us4](/assets/validation_img/us4.png)
 
 - I want to be able to book a virtual meeting with a staff member, so that I can
 get help with planning my holiday.
@@ -58,9 +51,6 @@ explain what exactly I am looking for.
 
 -  I want to be contacted by users in order to get them to choose a travel
 package from my company or my sponsors.
-
-
-![us4](/assets/validation_img/us5.png)
 
 
 ## Strategy:
@@ -245,12 +235,61 @@ Below screenshots of the validation results are exhibited.
 
 ![suggestionsjs](/assets/validation_img/contactjs.png)
 
-### Testing user stories
+## Testing user stories
+
+#### As a user:
+
+
+-  I want to explore a touristic destination by country and city, so that I can plan my next holiday.
+
+
+-  I want to select a search category, so that I can learn about accommodation
+options, gastronomic and main attractions in the selected destination.
+
+![us1](/assets/validation_img/us1_2.png)
+
+
+-  I want to interact with a map, so that I can easily get a feeling of the relative distances between locations I may be interested.
+
+![us31](/assets/validation_img/us3_1.png)
+
+![us32](/assets/validation_img/us3_2.png)
+
+
+-  I want to see holiday destination offers available, so that I can decide
+whether they may be of my interest.
+
+![us4](/assets/validation_img/us4.png)
+
+- I want to be able to book a virtual meeting with a staff member, so that I can
+get help with planning my holiday.
+
+
+**That feature has not been included in this release due to the level of importance that will be detailed in the strategy table below**
+
+
+- I want to have the option to contact the agency via email, so that I can
+explain what exactly I am looking for.
 
 
 
-### Testing contact form
+#### As a site owner:
 
+-  I want to be contacted by users in order to get them to choose a travel
+package from my company or my sponsors.
+
+
+![us4](/assets/validation_img/us5.png)
+
+
+## Manual Testing
+
+Page| Action taken | Expected result | Pass/Fail 
+------------ | -------------------------|--------- |---------
+             |                          |          |  
+             |                          |          |
+             |                          |          |
+             |                          |          |        
 
 
 
