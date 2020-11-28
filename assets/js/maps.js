@@ -9,7 +9,7 @@
 
 
 // Define global variables
-var map, autocomplete, service, place, mylat, mylng, option, infoWindow;
+var map, autocomplete, service, place, infoWindow;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var marker = [];
 let labelIndex = 0;
@@ -66,7 +66,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         bounds: map.getBounds(),
         types: ["lodging"],
       };
@@ -78,7 +78,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         bounds: map.getBounds(),
         types: ["bar", "cafe", "restaurant"],
         //types: ["cafe"],
@@ -91,7 +91,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         radius: 1000,
         bounds: map.getBounds(),
         types: [
@@ -109,7 +109,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         bounds: map.getBounds(),
         types: ["meal_takeaway", "meal_delivery"],
       };
@@ -121,7 +121,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         bounds: map.getBounds(),
         types: ["art_gallery", "museum", "aquarium", "amusement_park"],
       };
@@ -133,7 +133,7 @@ function onPlaceChanged() {
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(14);
-      var search = {
+      let search = {
         bounds: map.getBounds(),
         types: ["store", "shopping_mall"],
       };
