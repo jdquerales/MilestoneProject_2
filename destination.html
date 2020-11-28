@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination finder</title>
     <link
       rel="stylesheet"
@@ -10,7 +10,11 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -23,218 +27,180 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid align-items-center d-flex">
+        <h1 class="logo mr-auto">
+          <a href="index.html"> NaguaráTravel </a>
+        </h1>
+      </div>
+    </header>
 
-<header id="header" class="fixed-top">
-
-<div class="container-fluid align-items-center d-flex">
-<h1 class="logo mr-auto">
-<a href="index.html">
-NaguaráTravel
-</a>
-</h1>
-
-</div>
-
-
-
-</header>
-
-<section class="d-flex flex-column justify-content-center">
-
-<div class="container-fluid row" id="pac-card">
-
-<div class="col-12 col-lg-4 map-col">
-       <div class="container-fluid jumbotron-finder">
-       
-                    <div class="container-fluid finder-locator d-flex flex-column justify-content-center">
-                        <p class="lead"><small>Where would you like to go?</small></p>
-                        <div id="locationField" class="container-fluid justify-content-center">
-                            <input id="autocomplete" placeholder="Enter address" type="text" class="container-fluid justify-content-center" />
-                        </div>
-                    </div>  
-
-                    <div class="container-fluid">
-                        <p class="lead" id="looking-for"><small>What are you looking for?</small></p>
-                        <div id="controls">
-                            <select id="category">
-                                <option selected value> -- Select an option -- </option>
-                                <option id="accommodation" value="accommodation">Accommodation</option>
-                                <option id="bars" value="bars">Bars/Cafes/Restaurants</option>
-                                <option id="public" value="public">Public Transport</option>
-                                <option id="tourist" value="tourist">Tourist Attractions</option>
-                                <option id="shopping" value="shopping">Shopping</option>
-                            </select>
-                        </div>
-                    </div>
-
-
-                <div>
-
-
-
-                 <p class="lead lead-suggestions lead-finder-search">
-            <button id="show-results" type="button" class="btn btn-finder btn-primary btn-main-sections center-button"><strong>Results</strong></button> 
-            <button id="reset" type="button" class="btn btn-finder btn-primary btn-main-sections center-button" onclick="reset()"><strong>Reset</strong>   <i class="fas fa-undo"></i></button> 
-
-            
-
-
-            </p>
-
+    <section class="d-flex flex-column justify-content-center">
     
-    
-   
-</div>
-
-
-
-
-
-<div>
-
-    <p class="lead lead-suggestions lead-finder">
-            <a
-                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
-                href="index.html"
-                >Home</a
+      <div class="container-fluid row" id="pac-card">
+        <div class="col-12 col-lg-4 map-col">
+          <div class="container-fluid jumbotron-finder">
+            <div
+              class="container-fluid finder-locator d-flex flex-column justify-content-center"
             >
-            <a
-                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
-                href="suggestions.html"
-                >Suggestions</a
-            >
-            <a
-                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
-                href="contact.html"
-                >get a quote</a
-            >
-            </p>
-
-</div>
-            
-
-</div >
-
-            
-</div>
-
-
-<div id="map" class="col-12 col-lg-8 container-fluid map-col ">
-               
- </div>
-
-
-
-<div style="display: none">
-                    <div id="info-content">
-                        <table>
-                            
-                            
-                            <tr id="iw-url-row" class="iw_table_row">
-                                <td id="iw-icon" class="iw_table_icon"></td>
-                                <td id="iw-url"></td>
-                            </tr>
-                            <tr id="iw-address-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Address: </td>
-                                <td id="iw-address"></td>
-                            </tr>
-                            <tr id="iw-phone-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Telephone: </td>
-                                <td id="iw-phone"></td>
-                            </tr>
-                            <tr id="iw-rating-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Rating: </td>
-                                <td id="iw-rating"></td>
-                            </tr>
-                            <tr id="iw-website-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Website: </td>
-                                <td id="iw-website"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-</div>
-
-
-</section>
-
-
-
-
-<section  class="d-flex flex-column justify-content-center">
-
-   <div id="right-panel">
-      <h2>Results</h2>
-      <ul id="places"></ul>
-     <!-- <button id="more">More results</button>  --> 
-    </div>
-
-            <div id="results-heading" class="col-12">
-                <h3> </h3>
-                <div id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
-                    </table>
-                </div>
+              <p class="lead"><small>Where would you like to go?</small></p>
+              <div
+                id="locationField"
+                class="container-fluid justify-content-center"
+              >
+                <input
+                  id="autocomplete"
+                  placeholder="Enter address"
+                  type="text"
+                  class="container-fluid justify-content-center"
+                />
+              </div>
             </div>
 
+            <div class="container-fluid">
+              <p class="lead" id="looking-for">
+                <small>What are you looking for?</small>
+              </p>
+              <div id="controls">
+                <select id="category">
+                  <option selected value>-- Select an option --</option>
+                  <option id="accommodation" value="accommodation">
+                    Accommodation
+                  </option>
+                  <option id="bars" value="bars">Bars/Cafes/Restaurants</option>
+                  <option id="public" value="public">Public Transport</option>
+                  <option id="tourist" value="tourist">
+                    Tourist Attractions
+                  </option>
+                  <option id="shopping" value="shopping">Shopping</option>
+                </select>
+              </div>
+            </div>
 
-</section>
+            <div>
+              <p class="lead lead-suggestions lead-finder-search">
+                <button
+                  id="show-results"
+                  type="button"
+                  class="btn btn-finder btn-primary btn-main-sections center-button"
+                >
+                  <strong>Results</strong>
+                </button>
+                <button
+                  id="reset"
+                  type="button"
+                  class="btn btn-finder btn-primary btn-main-sections center-button"
+                  onclick="reset()"
+                >
+                  <strong>Reset</strong> <i class="fas fa-undo"></i>
+                </button>
+              </p>
+            </div>
 
-
-<footer id="footer" class="scrollfooter">
-
- <div class="container-fluid row icons">
-
-     
-
-<div id="icon-one"  class="col">
-<p class="log">
-Expert Travel Advice
-</p>
-<i class="fas fa-certificate"></i>
-</div>
-
-<div class="col">
-<p class="log">
-Worldwide Destinations
-</p>
-<i class="fas fa-globe-americas" onclick="" ></i>
-</div>
-
-<div class="col">
-<p class="log">
-Tailor-made Packages
-</p>
-<i class="fas fa-pencil-ruler" onclick="" ></i>
-</div>
-
-
-</div>
-
-        <div class="copyright">
-          © 2020 Copyright <strong> <span>José Querales</span></strong
-          >. All rights reserved.
+            <div>
+              <p class="lead lead-suggestions lead-finder">
+                <a
+                  class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                  href="index.html"
+                  >Home</a
+                >
+                <a
+                  class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                  href="suggestions.html"
+                  >Suggestions</a
+                >
+                <a
+                  class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                  href="contact.html"
+                  >get a quote</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-     
-</footer>
-   
-  <!-- Maps JavaScript   --> 
-	
-<script 
-    src="https://polyfill.io/v3/polyfill.min.js?features=default">
-</script>
 
-<script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA&libraries=places&callback=initMap">
-</script>
+        <div id="map" class="col-12 col-lg-8 container-fluid map-col"></div>
 
-<script 
-    src="assets/js/maps.js">	
-</script>
+        <div style="display: none">
+          <div id="info-content">
+            <table>
+              <tr id="iw-url-row" class="iw_table_row">
+                <td id="iw-icon" class="iw_table_icon"></td>
+                <td id="iw-url"></td>
+              </tr>
+              <tr id="iw-address-row" class="iw_table_row">
+                <td class="iw_attribute_name">Address:</td>
+                <td id="iw-address"></td>
+              </tr>
+              <tr id="iw-phone-row" class="iw_table_row">
+                <td class="iw_attribute_name">Telephone:</td>
+                <td id="iw-phone"></td>
+              </tr>
+              <tr id="iw-rating-row" class="iw_table_row">
+                <td class="iw_attribute_name">Rating:</td>
+                <td id="iw-rating"></td>
+              </tr>
+              <tr id="iw-website-row" class="iw_table_row">
+                <td class="iw_attribute_name">Website:</td>
+                <td id="iw-website"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <section class="d-flex flex-column justify-content-center">
+      <div id="right-panel">
+        <h2>Results</h2>
+        <ul id="places"></ul>
+        <!-- <button id="more">More results</button>  -->
+      </div>
+
+      <div id="results-heading" class="col-12">
+        <div id="listing">
+          <table id="resultsTable">
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="scrollfooter">
+      <div class="container-fluid row icons">
+        <div id="icon-one" class="col">
+          <p class="log">Expert Travel Advice</p>
+          <i class="fas fa-certificate"></i>
+        </div>
+
+        <div class="col">
+          <p class="log">Worldwide Destinations</p>
+          <i class="fas fa-globe-americas" onclick=""></i>
+        </div>
+
+        <div class="col">
+          <p class="log">Tailor-made Packages</p>
+          <i class="fas fa-pencil-ruler" onclick=""></i>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © 2020 Copyright <strong> <span>José Querales</span></strong
+        >. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Maps JavaScript   -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA&libraries=places&callback=initMap"
+    ></script>
+
+    <script src="assets/js/maps.js"></script>
+  </body>
 </html>

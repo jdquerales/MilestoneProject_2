@@ -748,3 +748,14 @@ select {
 @media screen and (min-width: 1001px) and (max-width: 1500px) {
    #show-results{ display: none; }
 }
+
+@media (max-width: 320px) {
+  .map-col {
+      height: 125vh;
+}
+.jumbotron-finder {
+  height: 320px;
+}
+}
+
+
