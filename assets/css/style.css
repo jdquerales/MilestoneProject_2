@@ -647,6 +647,18 @@ select {
   }
 }
 
+@media (max-width: 320px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .map-col-index {
+    height: 110vh;
+  }
+}
+
 @media (max-width: 850px) {
   .map-col-suggestions {
     height: 170vh;
