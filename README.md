@@ -365,6 +365,10 @@ package from my company or my sponsors.
 ### Valid message
  ![us31](/assets/validation_img/valid_email.png)
 
+### Email message received
+ ![us31](/assets/validation_img/email_testing.png)
+
+
 ## Deployment
 
 ### Public deployment
