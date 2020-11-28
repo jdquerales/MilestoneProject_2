@@ -91,6 +91,8 @@ As the initial stage of this project:
 
 - Contact form witj EmailJS SDK feature.
 
+- JavaScript function in index.html to display date and time.
+
 
 ## Stage 2 (Future release)
 
@@ -286,12 +288,29 @@ package from my company or my sponsors.
 
 | Page | Action taken | Expected result | Pass/Fail |
 |:----:|:------------:|:---------------:|:---------:|
-|      |              |                 |           |
-|      |              |                 |           |
-|      |              |                 |           |
+|   index.html  |    Refresh browser       |   Local date/time displayed              |      Pass     |
+|  index.html    |   Click on navegation buttons           |     Go the each of the other pages             |     Pass      |
+|  suggestions.html    |   Hover over one destination card           |   Remaining cards are faded        |       Pass    |
+|  suggestions.html    |   Click on Wikipedia icons in each card          |   New tab opens with the Wikipedia info        |       Pass    |
+|  suggestions.html    |   Click on Map icon on any card          |   Google Map div is created and scroll to top of the page  <br/> & marker is displayed on Google map     |       Pass    |
+|  suggestions.html    |   Click on another Map icon on another card          |   A new marker on the the location is created      |       Pass    |
+|  suggestions.html    |   Click on another Map icon on another card          |   A new marker on the the location is created      |       Pass    |
+|  suggestions.html    |   Click on navegation icons underneath the cards          |   Redirected to the corresponding pages     |       Pass    |
+|  destination.html    |   Go the search box and type a location,<br/> for instance "Popes Quay"         |   Different autocomplete options being displayed     |       Pass    |
+|  destination.html    |   Select one the autocomplete suggestions,<br/> for instance "Popes Quay, Cork, Ireland" <br/> & select option from dropdown menu (Bar/Cafes/Restaurants)      |   Customized marker are displayed on Google Map     |       Pass    |
+|  destination.html    |   Click on one of markers    |   Popup InfoWindow displayed, place icon, address and rating     |       Pass    |
+|  destination.html    |   Click on reset button   |   All markers and results table disappears    |       Pass    |
+|  destination.html    |   Go to mobile device size   |   A new button (Results) is displayed    |       Pass    |
+|  destination.html    |   Do a search and click on "Results" button   |   Google Map with markers is scrolled to the top of the page    |       Pass    |
+|  contact.html (See wrong message below)    |  Fill name box and try to send a empty message   |   Message not sent  & alerts messages appeared  |       Pass    |
+|  contact.html (See valid message below)     |  Fill all boxes and try to send a empty message   |   Message  sent   |       Pass    |
 
+### Wrong message
 
+![us31](/assets/validation_img/wrong_email.png)
 
+### Valid message
+ ![us31](/assets/validation_img/valid_email.png)
 
 ## Deployment
 
