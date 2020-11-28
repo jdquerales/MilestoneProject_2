@@ -398,6 +398,11 @@ li:nth-child(odd) {
 .btn-navegation-sections {
   background-color: #00ca4e;
   border-color: #00ca4e;
+  margin-top: 15px;
+}
+
+.btn-navegation-sections-index {
+  margin-top: 15px;
 }
 
 .btn-main-sections:hover,
@@ -654,6 +659,13 @@ select {
   }
 }
 
+@media (max-width: 380px) {
+  .map-col-contact {
+    height: 140vh;
+  }
+}
+
+
 @media (max-width: 320px) {
   #home h1 {
     font-size: 2rem;
@@ -695,7 +707,7 @@ select {
   }
 
   .map-col-contact {
-    height: 140vh;
+    height: 165vh;
   }
 }
 
@@ -752,7 +764,7 @@ select {
   margin-top: -50px;}
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1500px) {
+@media screen and (min-width: 1001px) and (max-width: 3000px) {
    #show-results{ display: none; }
 }
 
