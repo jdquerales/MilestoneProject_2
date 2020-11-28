@@ -664,6 +664,11 @@ select {
     height: 170vh;
   }
 
+@media (max-width: 320px) {
+  .map-col-suggestions {
+    height: 225vh;
+  }
+
   .section-title {
     margin-top: 25px;
   }
