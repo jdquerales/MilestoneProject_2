@@ -89,7 +89,7 @@ As the initial stage of this project:
 
 - Destinations of the month with interactivity using JQuery and Google maps API.
 
-- Contact form witj EmailJS SDK feature.
+- Contact form with EmailJS SDK feature.
 
 - JavaScript function in index.html to display date and time.
 
@@ -152,6 +152,10 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
 - [JQuery (3.5.1)](https://jquery.com/)
     - This projet uses **JQuery** JavaScript library, to manupulate 
     the HTML document (DOM API) and add interactivity in a much simpler way. 
+- [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/overview)
+    - This project uses the Google Maps JavaScript API.
+- [Google Places](https://developers.google.com/places/web-service/overview)
+    - This project uses Google Places and Place Autocomplete API.
 - [EmailJS](https://www.emailjs.com/)
     - This project uses EmailJS software development kit (SDK), whichs allows us sending email directly from Javascript, with no backend development. 
 - [Balsamiq](https://balsamiq.com/wireframes/)
@@ -339,7 +343,7 @@ I followed the procedure:
 
 - Then, I sent all changes to the remote repository in GitHub by using the command `git push`.
 
-- Inmediately after, I went to my GitHub page and enter to the repository named: MilestoneProject_1.
+- Inmediately after, I went to my GitHub page and enter to the repository named: MilestoneProject_2.
 
 - Once in the repository I went to setting, on the right top side of the page, and scrolled down to GitHub pages.
 
@@ -353,7 +357,7 @@ Note:  The deployed site will update automatically upon new commits to the maste
 ### Local deployment 
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting
-`git clone https://github.com/jdquerales/MilestoneProject_1.git` into your terminal
+`git clone https://github.com/jdquerales/MilestoneProject_2.git` into your terminal
 into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 
@@ -364,8 +368,4 @@ into your terminal. To cut ties with this GitHub repository, type `git remote rm
 
 ### Acknowledgements
 
-- I received inspiration for this project from [Bootstrap Made](https://bootstrapmade.com/).
 - I would like to thank my mentor Dick Vlaanderen for his support and helpful suggestions.
-- I would like to thank my friends and colleagues from the Tyndall Institute, Ransell D'Souza and Manuel Odelli
-  for their feedback on the deployed website.
-- I would like to give an special thanks to Dermot Crinnigan for his support and feedback on the design of my project.
