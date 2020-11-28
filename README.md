@@ -109,30 +109,22 @@ As future capabilities:
 
 ## Structure:
 
-As it can be noticed in the initial wireframes, I was initially considering to organise my website in different pages. However, 
-in order to make the user experience more comfortable I decided to organise my website in a single page with different separated 
-sections.
+As it can be noticed in the initial wireframes, I decided 
+to organize the website in different pages (4 in total). The website
+contains navegation buttons that are easily identified and user friendly.
 
-- Home Section: I have included a horizontal navegation bar fixed to the top (for desktop screen size), which collapses to
-  one icon for mobile screen size. I have included my own background picture (taken in Bariloche - Patagonia, Argentina in 2014)
-  providing a beautiful eye-catching initial impression of the website. I present myself, with call outs buttons for downloading CV and
-  contacting me. Social media links are also included.
+- **Home Page**: I have include a header, central jumbotron (with navegation links to different actions), and a footer. I have included a background of a beach
+as a holiday theme.
 
-- The following sections are organized in a logical way as typical resumes are presented.
+-  **Suggestion Page**: It includes a group of cards (using Bootstrap card), links to Wikipedia and Google Maps. Offer information is also displayed. Navegation links are presented: Home, Finder, and Qet a Quote.
 
-- About Me Section: Including personal picture, with personal details and a summary of background and main interests.
+- **Destination Page**: It is organize in different panels, one panel corresponding to the search menu, a Google Map panel (I have adopted the 1/3, 2/3 rule for the Desktop layout). There is a third panel which is created only after the search is performed.
 
-- My Tech Skills Section: Including a progress bar of my main Tech Skills (the percentages included are quite representative
-  of my experience).
+- **Contact Page**: It contains a contact form and a call to action.
 
-- My Resumé Section: Including a descending chronological showcase of my university degrees and professional experience.  
+- Header and Footer are kept consistently throughout the website.
 
-- My Portfolio Section: Divided in three main subsections, i.e. Data Science, Software Development and Research, with link to external
-  websites.
-
-- Contact Me Section: Including contact information and a contact form.  
-
-- Footer: Divided in three columns, i.e. brief summary of my profile, social links and download CV options. 
+- Background images are changed for each page, consistent with purpose of the section.
 
 ## Skeleton:
 
