@@ -141,19 +141,27 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
     - The project uses **HTML** as building block.
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
     - The project uses **Cascading Style Sheets (CSS)** for adding style to the website.
+- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - The project uses **JavaScript (JS)** for adding interactivity to the website.
+
 
 ## Libraries and Tools Used 
 
 - [Bootstrap (4.5.2)](https://getbootstrap.com/)
     - The project uses **Bootstrap** to design and customize responsive mobile-first sites.
-- [ScrollReveal](https://scrollrevealjs.org/)
-    - The project uses **ScrollReveal** to animate elements as they scroll into view.
+- [JQuery (3.5.1)](https://jquery.com/)
+    - This projet uses **JQuery** JavaScript library, to manupulate 
+    the HTML document (DOM API) and add interactivity in a much simpler way. 
+- [EmailJS](https://www.emailjs.com/)
+    - This project uses EmailJS software development kit (SDK), whichs allows us sending email directly from Javascript, with no backend development. 
 - [Balsamiq](https://balsamiq.com/wireframes/)
     - The project uses **Balsamiq** as wireframing tool.
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
     - I use **Chrome DevTools** to inspect and test styling and responsive desing during my development process.
 - [W3C](https://validator.w3.org)
     - I use **W3C** to check the HTML and CSS files.
+- [JSHint](https://jshint.com/)
+    - I use **JSHint** to check the JS files.
 - [AmIResponsive](http://ami.responsivedesign.is)
     - I use **Am I Responsive?** to check my responsive design and take screenshots of the deployed website.
 - [Fontawesome](https://fontawesome.com)
