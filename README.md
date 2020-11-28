@@ -107,10 +107,32 @@ As future capabilities:
 - Creating of automation testing suites using Jasmine.
 
 
-### Structure:
+## Structure:
 
+As it can be noticed in the initial wireframes, I was initially considering to organise my website in different pages. However, 
+in order to make the user experience more comfortable I decided to organise my website in a single page with different separated 
+sections.
 
+- Home Section: I have included a horizontal navegation bar fixed to the top (for desktop screen size), which collapses to
+  one icon for mobile screen size. I have included my own background picture (taken in Bariloche - Patagonia, Argentina in 2014)
+  providing a beautiful eye-catching initial impression of the website. I present myself, with call outs buttons for downloading CV and
+  contacting me. Social media links are also included.
 
+- The following sections are organized in a logical way as typical resumes are presented.
+
+- About Me Section: Including personal picture, with personal details and a summary of background and main interests.
+
+- My Tech Skills Section: Including a progress bar of my main Tech Skills (the percentages included are quite representative
+  of my experience).
+
+- My Resumé Section: Including a descending chronological showcase of my university degrees and professional experience.  
+
+- My Portfolio Section: Divided in three main subsections, i.e. Data Science, Software Development and Research, with link to external
+  websites.
+
+- Contact Me Section: Including contact information and a contact form.  
+
+- Footer: Divided in three columns, i.e. brief summary of my profile, social links and download CV options. 
 
 ## Skeleton:
 
@@ -122,7 +144,25 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
 [Mobile wireframe](/assets/wireframes/MS2_mobile.pdf)
 
 
-### Surface:
+## Surface:
+
+- Appealing pics was chosen for backgrounds, in order to make compatible with the holidays purpose of the website (obtained from [Pixabay](https://pixabay.com)).
+
+- Google font "Pacifico" (cursive) was chosen for the brand and descriptive text and messages in all pages. 
+
+- Google font "Poppins" was chosen throughout the pages.
+
+- The CSS Family Orange/White (#FFA500) color Scheme was chosen for sections texts.
+
+- The CSS Family #02457A color Scheme was chosen for footer background.
+
+- The CSS #F05F40 color was used for home navegation and submit message buttons.
+
+- The CSS #00CA4E color was used for in suggestions.html, destination.html and contact.html pages navegation buttons.
+
+- The CSS #00AB66 color was used for show results buttons.
+
+- The CSS #CA0B00 color was used for show reset button.
 
 
 
@@ -130,10 +170,11 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
  
 ### Existing Features
 
-
+See Stage 1 of Scope Section.
 
 ### Features Left to Implement
 
+See Stage 2 of Scope Section.
 
 ## Technologies Used
 
