@@ -223,6 +223,13 @@ section {
 #reset {
   margin: 0px;
   padding: 0px;
+  background-color: #CA0B00;
+  border-color: #CA0B00;
+}
+
+#show-results {
+    background-color: #00ab66 ;
+    border-color: #00ab66;
 }
 
 /* ------------------------------------- Jumbotron styles */
@@ -367,7 +374,7 @@ li:nth-child(odd) {
 /*-------------------buttons------------------*/
 
 .btn-main-sections {
-  margin-top: 15px;
+  margin-top: 0px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
