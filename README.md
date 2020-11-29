@@ -360,6 +360,19 @@ package from my company or my sponsors.
 ### Email message received
  ![us31](/assets/validation_img/email_testing.png)
 
+## Jasmine Unit Testing
+
+I have created some Jasmine Unit Testing for some of the JS function in my project.
+
+### Contact form testing:
+
+![us31](/assets/validation_img/emailScript.png)
+
+![us31](/assets/validation_img/validEmail.png)
+
+![us31](/assets/validation_img/invalidEmail.png)
+
+
 
 ## Deployment
 
