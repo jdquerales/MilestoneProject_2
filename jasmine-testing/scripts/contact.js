@@ -2,7 +2,7 @@ ContactForm = function() {
     this.validationCustom01 = "";
     this.validationCustom02 = "";
     this.validationCustom03 = "";
-    this.message = "";
+    this.message = "Hola";
 }
 
 /* This function send email through EmailJS service by taking inputs from form in contact.html */

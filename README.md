@@ -374,6 +374,9 @@ I have created some Jasmine Unit Testing for some of the JS function in my proje
 
 ![us31](/assets/validation_img/invalidEmail.png)
 
+### Home page JQuery testing:
+
+![us31](/assets/validation_img/index_jquery.png)
 
 
 ## Deployment

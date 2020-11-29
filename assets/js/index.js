@@ -2,9 +2,9 @@ $(document).ready(function () {
   var today = new Date();
 
   var date =
-    today.getDate()  + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
+    today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
 
-  document.getElementById("p1").innerHTML = date;
+    document.getElementById("p1").innerHTML = date;
 
   updateTime();
 
