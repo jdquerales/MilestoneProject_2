@@ -183,8 +183,10 @@ See Stage 2 of Scope Section.
 - [Bootstrap (4.5.2)](https://getbootstrap.com/)
     - The project uses **Bootstrap** to design and customize responsive mobile-first sites.
 - [JQuery (3.5.1)](https://jquery.com/)
-    - This projet uses **JQuery** JavaScript library, to manupulate 
+    - This project uses **JQuery** JavaScript library, to manupulate 
     the HTML document (DOM API) and add interactivity in a much simpler way. 
+- [Jasmine (3.6.0)](https://jasmine.github.io/index.html)
+    - This project uses Jasmine for testing some JavaScript functions (Behavior-Driven JavaScript).
 - [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/overview)
     - This project uses the Google Maps JavaScript API.
 - [Google Places](https://developers.google.com/places/web-service/overview)
