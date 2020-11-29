@@ -51,7 +51,7 @@ if(contactForm.message.value.length!=0){
         console.log("FAILED", error);
       },
     );
-    alert("Your message has been sent!")
+     alert("Your message has been sent!")
 };
 
   return false; // To block from loading a new page
