@@ -15,5 +15,21 @@ describe("Check that paragraphs that are used in index.js exist in document", fu
         });
     });
 
-    
+    describe("Check addZero function", function(){
+        it("Should return add a zero as strings is the input is less than 10", function(){
+            expect(addZero(9)).toBe("09");
+         });
+    });
+
+    var todayDyn = new Date();
+    var h = todayDyn.getHours();
+    var m = todayDyn.getMinutes();
+    var s = todayDyn.getSeconds();
+
+    describe("Check updateTime function", function(){
+        it("Should return the current time in the format DD:MM:SS", function(){
+            expect(updateTime(todayDyn)).toBe(h + ":" + m + ":" + s);
+         });
+    });
+
 });

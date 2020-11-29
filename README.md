@@ -187,6 +187,8 @@ See Stage 2 of Scope Section.
     the HTML document (DOM API) and add interactivity in a much simpler way. 
 - [Jasmine (3.6.0)](https://jasmine.github.io/index.html)
     - This project uses Jasmine for testing some JavaScript functions (Behavior-Driven JavaScript).
+- [Jasmine-Jquery](https://github.com/velesin/jasmine-jquery)
+    - This project uses Jasmine-Jquery which provides a set of custom matchers     for jQuery framework: API for handling HTML, CSS, etc. 
 - [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/overview)
     - This project uses the Google Maps JavaScript API.
 - [Google Places](https://developers.google.com/places/web-service/overview)
@@ -376,8 +378,11 @@ I have created some Jasmine Unit Testing for some of the JS function in my proje
 
 ### Home page JQuery testing:
 
+## DOM elements testing
 ![us31](/assets/validation_img/index_jquery.png)
 
+## updateTime function testing
+![us31](/assets/validation_img/updateTime.png)
 
 ## Deployment
 
