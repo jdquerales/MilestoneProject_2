@@ -6,9 +6,9 @@ This is the second milestone project of my journey as a Software Developer in Co
 data, so I have built an interactive front-end site. I have named my hypothetical product "NaguaráTravel", a holidays provider agency that offer the users a friendly web application that allows them to actively engage with data, alter the way the site display information in order to achieve their desired goals. The website is organized into 4 pages: 1) landing page with call to actions, 2) Selection of destinations of the month, 3) Interactive destination finder and 4) a contact form. 
 
 
-## Demo
+## Live website
 
-A live demo can be found [here](https://jdquerales.github.io/MilestoneProject_2/).
+The deployed website can be found [here](https://jdquerales.github.io/MilestoneProject_2/).
 
 ![responsive mockups](/assets/validation_img/responsive.png)
 
