@@ -15,7 +15,7 @@
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
-              alert("Something went wrong!");
+              alert("Please complete all fields!");
             }
             form.classList.add("was-validated");
             

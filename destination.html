@@ -64,17 +64,15 @@
                 <small>What are you looking for?</small>
               </p>
               <div id="controls">
-                <select id="category">
+                <select id="category" onchange="getval(this);">
                   <option selected value>-- Select an option --</option>
-                  <option id="accommodation" value="accommodation">
-                    Accommodation
-                  </option>
-                  <option id="bars" value="bars">Bars/Cafes/Restaurants</option>
-                  <option id="public" value="public">Public Transport</option>
-                  <option id="tourist" value="tourist">
+                  <option id="accommodation" value="accommodation" >Accommodation</option>
+                  <option id="bars" value="bars" >Bars/Cafes/Restaurants</option>
+                  <option id="public" value="public" >Public Transport</option>
+                  <option id="tourist" value="tourist" >
                     Tourist Attractions
                   </option>
-                  <option id="shopping" value="shopping">Shopping</option>
+                  <option id="shopping" value="shopping" >Shopping</option>
                 </select>
               </div>
             </div>
@@ -86,12 +84,13 @@
                   type="button"
                   class="btn btn-finder btn-primary btn-main-sections center-button"
                 >
-                  <strong>Results</strong>
+                  <strong>Map</strong>
                 </button>
                 <button
                   id="reset"
                   type="button"
                   class="btn btn-finder btn-primary btn-main-sections center-button"
+                  style="display: none"
                   onclick="reset()"
                 >
                   <strong>Reset</strong> <i class="fas fa-undo"></i>

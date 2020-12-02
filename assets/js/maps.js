@@ -290,3 +290,9 @@ $("#show-results").click(function() {
         scrollTop: $("#map").offset().top},
         'slow');
 });
+
+// This function add the reset button only after an option is selected
+function getval(sel)
+{
+    $("#reset").css("display", "block");
+}

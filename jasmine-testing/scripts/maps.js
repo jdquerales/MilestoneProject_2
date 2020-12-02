@@ -290,3 +290,4 @@ $("#show-results").click(function() {
         scrollTop: $("#map").offset().top},
         'slow');
 });
+
