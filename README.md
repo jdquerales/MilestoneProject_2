@@ -55,9 +55,7 @@ package from my company or my sponsors.
 
 ## Strategy:
 
-The goal of this project is to get noticed among potential recruiters and scientific collaborators. 
-In the design of this project, my main goal was to make it attractive by highlighting main aspects
-in the different sections and adding link to external sources. 
+The goal of this project is to get the attention of potential customers, allow them to interact with the product by searching potential holidays destinations and also provide them with the option to get a personalised holiday recommendation. 
 
 
 ### Strategy Table
@@ -77,7 +75,7 @@ Total| 26 | 22
 
 ## Scope:
 
-As derived from the strategy table (Importance < Viability), I am unable to put in place everything. As a result, I identified what the minimum viable product is. This means Phase 1 should be enough to satisfy users. I will then have the opportunity to get feedback for future developments.
+As derived from the strategy table (Importance < Viability), I am unable to put in place everything. As a result, I identified what a minimum viable product is. This means **Stage** 1 should be enough to satisfy users. I will then have the opportunity to get feedback for future developments.
 
 Please find below the planned releases:
 
@@ -100,11 +98,9 @@ As future capabilities:
 
 - Call on Google calendar API to allow user to book a slot.
 
-- Include user reviews and linking to booking.com API reviews.
+- Include user reviews and linking to **booking.com** API reviews.
 
 - Include live online chat feature.
-
-- Creating of automation testing suites using Jasmine.
 
 
 ## Structure:
@@ -113,10 +109,9 @@ As it can be noticed in the initial wireframes, I decided
 to organize the website in different pages (4 in total). The website
 contains navegation buttons that are easily identified and user friendly.
 
-- **Home Page**: I have include a header, central jumbotron (with navegation links to different actions), and a footer. I have included a background of a beach
-as a holiday theme.
+- **Home Page**: I have include a header, central jumbotron (with navegation links to different actions), and a footer. I have included a background of a beach as a holiday theme.
 
--  **Suggestion Page**: It includes a group of cards (using Bootstrap card), links to Wikipedia and Google Maps. Offer information is also displayed. Navegation links are presented: Home, Finder, and Qet a Quote.
+-  **Suggestion Page**: It includes a group of cards (using **Bootstrap** card class), links to Wikipedia and Google Maps. Offers information is also displayed. Navegation links are presented: Home, Finder, and Qet a Quote.
 
 - **Destination Page**: It is organize in different panels, one panel corresponding to the search menu, a Google Map panel (I have adopted the 1/3, 2/3 rule for the Desktop layout). There is a third panel which is created only after the search is performed.
 
@@ -128,7 +123,7 @@ as a holiday theme.
 
 ## Skeleton:
 
-I used Balsamiq to create my initial wireframes, starting with the mobile and desktop design as an overall idea and helping me to make the design responsive afterwards.
+I used **Balsamiq** software to create my initial wireframes, starting with the mobile and desktop design as an overall idea and helping me to make the design responsive afterwards.
 
 
 [Desktop wireframe](/assets/wireframes/MS2_desktop.pdf)
@@ -138,7 +133,7 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
 
 ## Surface:
 
-- Appealing pics was chosen for backgrounds, in order to make compatible with the holidays purpose of the website (obtained from [Pixabay](https://pixabay.com)).
+- Appealing pictures were chosen for backgrounds, in order to make compatible with the holidays purpose of the website (obtained from [Pixabay](https://pixabay.com)).
 
 - Google font "Pacifico" (cursive) was chosen for the brand and descriptive text and messages in all pages. 
 
@@ -155,8 +150,6 @@ I used Balsamiq to create my initial wireframes, starting with the mobile and de
 - The CSS #00AB66 color was used for show results buttons.
 
 - The CSS #CA0B00 color was used for show reset button.
-
-
 
 ## Features
  
@@ -237,7 +230,7 @@ devices (mobile and tablet sizes):
 
 - Surface Duo.
 
-I also used **Am I Responsive?** to check my responsive design.
+I also used **Am I Responsive?** to check my responsive design and to create the final product screenshots presented at the beginning.
 
 
 ## Code validation
@@ -262,7 +255,6 @@ Below screenshots of the validation results are exhibited.
 ### **contact.html**:
 
 ![HTML validation](/assets/validation_img/contact.png)
-
 
 ## CSS file validation:
 
@@ -290,22 +282,18 @@ Below screenshots of the validation results are exhibited.
 
 #### As a user:
 
-
 -  I want to explore a touristic destination by country and city, so that I can plan my next holiday.
-
 
 -  I want to select a search category, so that I can learn about accommodation
 options, gastronomic and main attractions in the selected destination.
 
 ![us1](/assets/validation_img/us1_2.png)
 
-
 -  I want to interact with a map, so that I can easily get a feeling of the relative distances between locations I may be interested.
 
 ![us31](/assets/validation_img/us3_1.png)
 
 ![us32](/assets/validation_img/us3_2.png)
-
 
 -  I want to see holiday destination offers available, so that I can decide
 whether they may be of my interest.
@@ -315,13 +303,10 @@ whether they may be of my interest.
 - I want to be able to book a virtual meeting with a staff member, so that I can
 get help with planning my holiday.
 
-
 **That feature has not been included in this release due to the level of importance that will be detailed in the strategy table below**
-
 
 - I want to have the option to contact the agency via email, so that I can
 explain what exactly I am looking for.
-
 
 
 #### As a site owner:
@@ -364,7 +349,7 @@ package from my company or my sponsors.
 ### Email message received
  ![us31](/assets/validation_img/email_testing.png)
 
-## Jasmine Unit Testing
+## Automated Jasmine and Jasmine-Jquery Unit Testing
 
 I have created some Jasmine (and Jasmine-JQuery) Unit Testing for some of the JS function in my project. They can be found at: **jasmine-testing/** containing the html boilerplates with links to **jasmine-testing/scripts** and jasmine-testing/specs for the JS scripts and specs, respectively. All pages in my project have been covered with some automated unit testing. Nevertheless, I will continue to incorporate more level of testing in futute releases. 
 
