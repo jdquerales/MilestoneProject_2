@@ -90,6 +90,9 @@ section {
 .opaque-overlay {
   background-color: rgba(0, 0, 0, 0.25);
 }
+
+/* ------------------------------------- Home page styles */
+
 #home {
   margin: 0px;
   padding: 0px;
@@ -116,7 +119,26 @@ section {
   text-decoration: none;
 }
 
-/* ------------------------------------- Destination page */
+#p1,
+#p2,
+#p3 {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  font-size: 1.25rem;
+}
+
+#timer {
+  display: flex; /* or inline-flex */
+  color: red;
+  justify-content: center;
+}
+
+/* ------------------------------------- Destination page styles */
 
 #home-destination {
   height: 100vh;
@@ -223,13 +245,13 @@ section {
 #reset {
   margin: 0px;
   padding: 0px;
-  background-color: #CA0B00;
-  border-color: #CA0B00;
+  background-color: #ca0b00;
+  border-color: #ca0b00;
 }
 
 #show-results {
-    background-color: #00ab66 ;
-    border-color: #00ab66;
+  background-color: #00ab66;
+  border-color: #00ab66;
 }
 
 /* ------------------------------------- Jumbotron styles */
@@ -249,23 +271,18 @@ section {
   border-radius: 8px;
 }
 
-#p1,
-#p2,
-#p3 {
-  padding: 0px;
-  margin: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #fff;
-  font-weight: 300;
-  font-family: "Pacifico", cursive;
-  font-size: 1.25rem;
+.jumbotron-contact {
+  background-color: #fff8dc;
+  height: auto;
+  width: 80%;
+  border-radius: 80px;
 }
 
-#timer {
-  display: flex; /* or inline-flex */
-  color: red;
-  justify-content: center;
+.jumbotron-form {
+  background-color: #fff8dc;
+  height: 100%;
+  width: 70%;
+  border-radius: 80px;
 }
 
 /* ------------------------------------- Footer styles */
@@ -293,7 +310,19 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-/* Google places results */
+.icons {
+  font-size: 60px;
+  color: orange;
+}
+
+.log {
+  font-size: 14px;
+  color: orange;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+}
+
+/* Google places results destinations.html page */
 
 #right-panel select,
 #right-panel input {
@@ -315,7 +344,6 @@ footer {
   margin: 0px;
   padding: 0px;
   z-index: 5;
-  /* border: 1px solid #999;*/
   background: rgb(221, 105, 105);
   text-align: center;
   width: 100%;
@@ -353,7 +381,24 @@ li:nth-child(odd) {
   margin: 5px 0 0 0;
 }
 
-/* Info content*/
+#autocomplete {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.lead-finder {
+  margin-top: 40px;
+}
+
+.lead-finder-search {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center !important;
+}
+
+/* Info window content in destination.html styles */
+
 .iw_table_row {
   height: 18px;
 }
@@ -385,7 +430,7 @@ li:nth-child(odd) {
 }
 
 .btn-finder {
-    width: 80px;
+  width: 80px;
 }
 
 .btn-main-sections-suggestions {
@@ -422,18 +467,11 @@ li:nth-child(odd) {
   font-weight: 700;
 }
 
-
-
 .center-button {
   text-align: center !important;
 }
 
-/* Suggestions page */
-
-#autocomplete {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
+/* Suggestions page styles  */
 
 #controls select {
   font-family: "Poppins", sans-serif !important;
@@ -493,10 +531,6 @@ li:nth-child(odd) {
   height: 100vh;
 }
 
-/*.border {
-    border: solid 10px red!important;
-}*/
-
 .center-div-content {
   display: flex;
   align-items: center;
@@ -523,7 +557,22 @@ li:nth-child(odd) {
   margin-bottom: 20px;
 }
 
-/* Contact form */
+.prices {
+  color: red;
+  font-weight: 800 !important;
+  font-size: 18px;
+}
+
+.including {
+  font-size: 24px;
+}
+
+.lead-suggestions {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Contact form styles */
 
 #contact-form {
   height: 100vh;
@@ -572,13 +621,6 @@ li:nth-child(odd) {
   font-size: 30px;
 }
 
-.jumbotron-contact {
-  background-color: #fff8dc;
-  height: auto;
-  width: 80%;
-  border-radius: 80px;
-}
-
 .justify-content-center {
   align-items: center;
   justify-content: center !important;
@@ -604,13 +646,6 @@ p {
 #contact a {
   color: #f8f8ff;
   text-decoration: none;
-}
-
-.jumbotron-form {
-  background-color: #fff8dc;
-  height: 100%;
-  width: 70%;
-  border-radius: 80px;
 }
 
 .container-form {
@@ -641,6 +676,8 @@ select {
   font-family: "Poppins", sans-serif;
 }
 
+/* Media Queries */
+
 @media (max-width: 986px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .card {
@@ -664,7 +701,6 @@ select {
     height: 140vh;
   }
 }
-
 
 @media (max-width: 320px) {
   #home h1 {
@@ -690,7 +726,6 @@ select {
   }
 }
 
-
 @media (max-width: 375px) {
   .map-col-suggestions {
     height: 180vh;
@@ -711,70 +746,32 @@ select {
   }
 }
 
-.icons {
-  font-size: 60px;
-  color: orange;
-}
-
-.log {
-  font-size: 14px;
-  color: orange;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 0px;
-}
-
-#calling {
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.prices {
-  color: red;
-  font-weight: 800!important;
-  font-size: 18px;
-}
-
-.including {
-  font-size: 24px;
-}
-
-.lead-suggestions {
-  margin: 0px;
-  padding: 0px;
-}
-
-.lead-finder {
-  margin-top: 40px;
-}
-
-.lead-finder-search {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center!important;
-}
-
 @media screen and (min-width: 0px) and (max-width: 1000px) {
-  #show-results{ display: block;
-  margin-top:0px;
-  margin-right: 5px;  }  /* show it on large screen */
-   #reset{ display: block;
-   margin-left: 5px; } 
-   .jumbotron-finder {
-  margin-top: -50px;}
+  #show-results {
+    display: block;
+    margin-top: 0px;
+    margin-right: 5px;
+  } /* show it on large screen */
+  #reset {
+    display: block;
+    margin-left: 5px;
+  }
+  .jumbotron-finder {
+    margin-top: -50px;
+  }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 3000px) {
-   #show-results{ display: none; }
+  #show-results {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
   .map-col {
-      height: 125vh;
+    height: 125vh;
+  }
+  .jumbotron-finder {
+    height: 320px;
+  }
 }
-.jumbotron-finder {
-  height: 320px;
-}
-}
-
-
