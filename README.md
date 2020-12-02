@@ -366,7 +366,24 @@ package from my company or my sponsors.
 
 ## Jasmine Unit Testing
 
-I have created some Jasmine Unit Testing for some of the JS function in my project.
+I have created some Jasmine (and Jasmine-JQuery) Unit Testing for some of the JS function in my project. They can be found at: **jasmine-testing/** containing the html boilerplates with links to **jasmine-testing/scripts** and jasmine-testing/specs for the JS scripts and specs, respectively. All pages in my project have been covered with some automated unit testing. Nevertheless, I will continue to incorporate more level of testing in futute releases. 
+
+
+### Home page Jasmine-JQuery testing:
+
+## DOM elements testing
+![us31](/assets/validation_img/index_jquery.png)
+
+## updateTime function testing
+![us31](/assets/validation_img/updateTime.png)
+
+### Suggestions of the month page Jasmine-JQuery testing:
+
+![us31](/assets/validation_img/suggestions_testing.png)
+
+### Destination finder page of Jasmine-JQuery testing:
+
+![us31](/assets/validation_img/destination_testing.png)
 
 ### Contact form testing:
 
@@ -376,13 +393,6 @@ I have created some Jasmine Unit Testing for some of the JS function in my proje
 
 ![us31](/assets/validation_img/invalidEmail.png)
 
-### Home page JQuery testing:
-
-## DOM elements testing
-![us31](/assets/validation_img/index_jquery.png)
-
-## updateTime function testing
-![us31](/assets/validation_img/updateTime.png)
 
 ## Deployment
 

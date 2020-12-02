@@ -386,6 +386,26 @@ li:nth-child(odd) {
   text-align: center;
 }
 
+#calling {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.prices {
+  color: red;
+  font-weight: 800 !important;
+  font-size: 18px;
+}
+
+.including {
+  font-size: 24px;
+}
+
+.lead-suggestions {
+  margin: 0px;
+  padding: 0px;
+}
+
 .lead-finder {
   margin-top: 40px;
 }
@@ -555,21 +575,6 @@ li:nth-child(odd) {
 
 .section-title {
   margin-bottom: 20px;
-}
-
-.prices {
-  color: red;
-  font-weight: 800 !important;
-  font-size: 18px;
-}
-
-.including {
-  font-size: 24px;
-}
-
-.lead-suggestions {
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Contact form styles */

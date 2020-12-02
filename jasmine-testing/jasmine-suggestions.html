@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Testing</title>
+    <!--   Load Jasmine Framework -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"
+      integrity="sha512-dqL4nYnbiMiNNy/V2zRK55QXSRVyu26KCuGoL8Zf5lDfKRRf8pBFW8RXe8at36QlB8s8bnOjKP6b5YTalHO6wQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js"
+      integrity="sha512-bqig44hBpNuvBzxsqbHiqwRximGm4UfJAvOeNQHjB7++0D2u/3bcw4ZwmVsqrooii2UJ91oDI/6aANdp3BwcQQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"
+      integrity="sha512-igPP1Xd0hsvXVZGyfIYeUD779NLEA1Sj/5ts2C/e/22zeUqR6ehA7M/nNLuONalznkHQkGPBESNwzGpwBQD60g=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"
+      integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q=="
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jasmine-jquery@2.1.1/lib/jasmine-jquery.min.js"></script>
+
+    <!--    Load scripts -->
+    <script type="text/javascript" src="scripts/suggestions.js"></script>
+
+    <!--    Load Tests-->
+    <script type="text/javascript" src="specs/suggestionsSpec.js"></script>
+  
+  <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    
+    <section class="d-flex flex-column justify-content-center">
+      <!-- Bootstrap card showcasing destiinations of the month -->
+
+      <div class="container-fluid row" style="display: none">
+        <div class="col-12 col-lg-12 map-col-suggestions">
+          <div class="container-fluid">
+            <div
+              class="container-fluid justify-content-center d-flex flex-column"
+            >
+              <div class="section-title" style="display: none">
+                <h2 class="titles">Destinations of the month</h2>
+                <div class="horizontal-line"></div>
+              </div>
+            </div>
+
+            <div class="row row-suggestions" style="display: none">
+              <div class="col-lg-3 col-6 center-div-content">
+                <div id="paris-card" class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/paris-4.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text"></p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Paris"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      target="_blank"
+                    >
+                      <i class="fab fa-wikipedia-w"></i>
+                    </a>
+
+                    <button
+                      id="paris"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                    >
+                      <i
+                        class="fas fa-map-marked-alt"
+                        onclick="displayMap()"
+                      ></i>
+                    </button>
+
+                    <hr />
+                    <div class="including">
+                      <i class="fas fa-plane"></i>
+                      <i class="fas fa-utensils"></i>
+                      <i class="fas fa-hotel"></i>
+                    </div>
+
+                    <p>
+                      5 nights from
+                      <span class="prices"
+                        ><i class="fas fa-euro-sign"></i>599
+                      </span>
+                      per person
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 center-div-content">
+                <div id="buenos-aires-card" class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/buenos-aires-4.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Buenos Aires</h5>
+                    <p class="card-text"></p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Buenos_Aires"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      target="_blank"
+                    >
+                      <i class="fab fa-wikipedia-w"></i>
+                    </a>
+
+                    <button
+                      id="buenos_aires"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                    >
+                      <i
+                        class="fas fa-map-marked-alt"
+                        onclick="displayMap()"
+                      ></i>
+                    </button>
+
+                    <hr />
+
+                    <div class="including">
+                      <i class="fas fa-plane"></i>
+                      <i class="fas fa-utensils"></i>
+                      <i class="fas fa-hotel"></i>
+                    </div>
+
+                    <p>
+                      6 nights from
+                      <span class="prices"
+                        ><i class="fas fa-euro-sign"></i>899
+                      </span>
+                      per person
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 center-div-content">
+                <div id="cancun-card" class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/cancun-5.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cancún</h5>
+                    <p class="card-text"></p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Canc%C3%BAn"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      target="_blank"
+                    >
+                      <i class="fab fa-wikipedia-w"></i>
+                    </a>
+
+                    <button
+                      id="cancun"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      onclick="displayMap()"
+                    >
+                      <i class="fas fa-map-marked-alt"></i>
+                    </button>
+
+                    <hr />
+
+                    <div class="including">
+                      <i class="fas fa-plane"></i>
+                      <i class="fas fa-utensils"></i>
+                      <i class="fas fa-hotel"></i>
+                    </div>
+
+                    <p>
+                      5 nights from
+                      <span class="prices"
+                        ><i class="fas fa-euro-sign"></i>999
+                      </span>
+                      per person
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 center-div-content">
+                <div id="habana-card" class="card">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/cuba.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">La Habana</h5>
+                    <p class="card-text"></p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Havana"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      target="_blank"
+                    >
+                      <i class="fab fa-wikipedia-w"></i>
+                    </a>
+
+                    <button
+                      id="cuba"
+                      class="btn btn-primary btn-main-sections center-button btn-main-sections-suggestions"
+                      onclick="displayMap()"
+                    >
+                      <i class="fas fa-map-marked-alt"></i>
+                    </button>
+
+                    <hr />
+
+                    <div class="including">
+                      <i class="fas fa-plane"></i>
+                      <i class="fas fa-utensils"></i>
+                      <i class="fas fa-hotel"></i>
+                    </div>
+
+                    <p>
+                      6 nights from
+                      <span class="prices"
+                        ><i class="fas fa-euro-sign"></i>799
+                      </span>
+                      per person
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="lead lead-suggestions">
+              <a
+                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                href="destination.html"
+                >Finder</a
+              >
+              <a
+                class="btn btn-primary btn-main-sections center-button btn-navegation-sections"
+                href="contact.html"
+                >get a quote</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Div containing the google maps being triggered by buttons in cards -->
+
+        <div
+          style="display: none"
+          id="suggestions-map"
+          class="col-12 col-lg-12 container-fluid-map map-col-suggestions"
+        ></div>
+      </div>
+    </section>
+
+
+ <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLbEkCc7-poNiXhu7kF83J3O5UnVZ8vA"
+    ></script>
+
+  </body>
+</html>
