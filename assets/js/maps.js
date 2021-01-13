@@ -14,6 +14,10 @@ const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var marker = [];
 let labelIndex = 0;
 
+// env variables for API KEY
+
+var secretkey = config.API_KEY;
+
 // Initialise Google Maps map
 
 function initMap() {

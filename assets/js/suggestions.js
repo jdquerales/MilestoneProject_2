@@ -35,6 +35,8 @@ var coordinates = [
 ];
 var markers = [];
 
+var secretkey = config.API_KEY;
+
 function initMapPA() {
   const myLatLng = { lat: 51.8985, lng: -8.4756 };
   const map = new google.maps.Map(document.getElementById("suggestions-map"), {
